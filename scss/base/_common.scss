@@ -1,0 +1,51 @@
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    list-style: none;
+}
+
+img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    color: var(--text-color-primary);
+    background: rgba(32, 8, 59, 0.75);
+    margin: 0;
+    width: 100%;
+    background-image:
+    url("..//../images/1600/Bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100%;
+}
+
