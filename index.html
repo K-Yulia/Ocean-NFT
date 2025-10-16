@@ -1,52 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ocean-NFT</title>
-    <link rel="icon" href="./images/favicon.ico">
+    <link rel="icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./css/main.min.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header class="page-header">
-        <a href="#" class="logo link">OceanNFT</a>
+      <div class="page-header__container container">
+        <a href="#" class="logo link">
+          <svg class="logo__icon">
+            <use href="./images/1600/logo.svg"></use>
+          </svg>
+          <span class="logo-span">Ocean</span>NFT</a
+        >
         <ul class="page-nav list">
-            <li class="page-nav_item">
-                <a href="#" class="page-nav__link-1 link">Market</a>
-            </li>
-            <li class="page-nav_item">
-                <a href="#" class="page-nav__link-2 link">Features</a>
-            </li>
-            <li class="page-nav_item">
-                <a href="#" class="page-nav__link-3 link">Community</a>
-            </li>
-             <li class="page-nav_item">
-                <a href="#" class="page-nav__link-4 link">Market</a>
-            </li>
-            <li class="page-nav_item">
-                <a href="#" class="page-nav__link-5 link">Features</a>
-            </li>
-            <li class="page-nav_item">
-                <a href="#" class="page-nav__link-6 link">Community</a>
-            </li>
-             <li class="page-nav_item">
-                <a href="#" class="page-nav__link-7 link">Market</a>
-            </li>
-            <li class="page-nav_item">
-                <a href="#" class="page-nav__link-8 link">Features</a>
-            </li>
-            <li class="page-nav_item">
-                <a href="#" class="page-nav__link-9 link">Community</a>
-            </li>
+          <li class="page-nav_item">
+            <a href="#" class="page-nav__link link">Market</a>
+          </li>
+          <li class="page-nav_item">
+            <a href="#" class="page-nav__link link">Features</a>
+          </li>
+          <li class="page-nav_item">
+            <a href="#" class="page-nav__link link">Community</a>
+          </li>
         </ul>
-
+        <ul class="user-account list">
+          <li class="user-account__item">
+            <a href="#" class="user-account__link link">
+              <svg class="user-account__icon icon-basket">
+                <use href="./images/sprite.svg#icon-basket"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="user-account__item">
+            <a href="#" class="user-account__link link"
+              ><svg class="user-account__icon icon-user">
+                <use href="./images/sprite.svg#icon-user"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu js-menu" data-menu>
+          <div class="mobile-menu__container">
+            <button class="mobile-menu__close-btn" data-menu-close>
+              <svg class="mobile-menu__close-icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-nav js-nav list">
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link link">Market</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link link">Features</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link link">Community</a>
+              </li>
+            </ul>
+            <ul class="mobile-user-account list">
+              <li class="mobile-user-account__item">
+                <a href="#" class="mobile-user-account__link link">
+                  <svg class="mobile-user-account__icon icon-basket">
+                    <use href="./images/sprite.svg#icon-basket"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-user-account__item">
+                <a href="#" class="mobile-user-account__link link"
+                  ><svg class="mobile-user-account__icon icon-user">
+                    <use href="./images/sprite.svg#icon-user"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
-    
-</body>
+    <main></main>
+    <footer></footer>
+    <script src="./js/menu.js"></script>
+  </body>
 </html>
