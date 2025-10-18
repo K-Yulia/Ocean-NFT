@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="32" fill="none"><foreignObject width="0" height="0" x="0" y="0"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(106.12px);clip-path:url(#a);height:100%;width:100%"/></foreignObject><path fill="url(#b)" stroke="#000" d="m18.729 18.252-8.234 11.594-.408.574-.407-.575-8.226-11.593.662-.72 7.974 4.704 7.977-4.705.662.72ZM10.643 2.488l8.23 13.658.26.433-.435.255-8.23 4.86-.254.151-.254-.15-8.227-4.865-.433-.257.26-.432L9.786 2.488l.429-.711.428.71Z" data-figma-bg-blur-radius="212.248"/><defs><linearGradient id="b" x1="1.862" x2="22.013" y1="2.746" y2="3.231" gradientUnits="userSpaceOnUse"><stop offset=".183" stop-color="#FF56F6"/><stop offset=".433" stop-color="#B936EE"/><stop offset=".854" stop-color="#3BACE2"/><stop offset="1" stop-color="#406AFF"/></linearGradient><clipPath id="a"><path d="m18.729 18.252-8.234 11.594-.408.574-.407-.575-8.226-11.593.662-.72 7.974 4.704 7.977-4.705.662.72ZM10.643 2.488l8.23 13.658.26.433-.435.255-8.23 4.86-.254.151-.254-.15-8.227-4.865-.433-.257.26-.432L9.786 2.488l.429-.711.428.71Z"/></clipPath></defs></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="32" fill="none">
+<foreignObject width="0" height="0" x="0" y="0">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(106.12px);clip-path:url(#a);height:100%;width:100%"/>
+    </foreignObject>
+    <path fill="url(#b)" stroke="#000" d="m18.729 18.252-8.234 11.594-.408.574-.407-.575-8.226-11.593.662-.72 7.974 4.704 7.977-4.705.662.72ZM10.643 2.488l8.23 13.658.26.433-.435.255-8.23 4.86-.254.151-.254-.15-8.227-4.865-.433-.257.26-.432L9.786 2.488l.429-.711.428.71Z" data-figma-bg-blur-radius="212.248"/>
+    <defs><linearGradient id="b" x1="1.862" x2="22.013" y1="2.746" y2="3.231" gradientUnits="userSpaceOnUse"><stop offset=".183" stop-color="#FF56F6"/><stop offset=".433" stop-color="#B936EE"/>
+    <stop offset=".854" stop-color="#3BACE2"/><stop offset="1" stop-color="#406AFF"/>
+    </linearGradient>
+    <clipPath id="a">
+        <path d="m18.729 18.252-8.234 11.594-.408.574-.407-.575-8.226-11.593.662-.72 7.974 4.704 7.977-4.705.662.72ZM10.643 2.488l8.23 13.658.26.433-.435.255-8.23 4.86-.254.151-.254-.15-8.227-4.865-.433-.257.26-.432L9.786 2.488l.429-.711.428.71Z"/>
+        </clipPath>
+        </defs>
+        </svg>

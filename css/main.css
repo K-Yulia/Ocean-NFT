@@ -417,4 +417,47 @@ body {
   .mobile-menu {
     width: 100%;
   }
+}
+.hero {
+  margin-top: 195px;
+}
+
+.btn-explore {
+  margin-left: -6px;
+  margin-top: 270px;
+  width: 255px;
+  height: 68px;
+  position: relative;
+  background: linear-gradient(130deg, #ff56f6 18.31%, #b936ee 43.26%, #3bace2 85.44%, #406aff 100%);
+  clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 40px) 100%, 0 100%, 0 20px);
+  border-radius: 5px;
+  border: none;
+  z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-explore::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: #fff;
+  clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 40px) 100%, 0 100%, 0 20px);
+  z-index: -1;
+}
+
+.btn-explore::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: linear-gradient(310deg, #ff56f6 18.31%, #b936ee 43.26%, #3bace2 85.44%, #406aff 100%);
+  clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 40px) 100%, 0 100%, 0 20px);
+  z-index: 0;
+}
+
+.btn-explore-link {
+  font-family: var(--font4);
+  position: absolute;
+  font-weight: 700;
+  font-size: 19px;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
