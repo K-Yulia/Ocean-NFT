@@ -1,0 +1,10 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "scripts": {
+    "sprite": "svg-sprite-generate -d icons -o images/sprite.svg"
+  },
+  "devDependencies": {
+    "svg-sprite-generator": "^0.0.7"
+  }
+}

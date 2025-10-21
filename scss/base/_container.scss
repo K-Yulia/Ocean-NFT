@@ -8,27 +8,27 @@
 
 @media screen and (max-width: 1439px) {
   .container {
-    width: 994px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .container {
-    width: 738px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .container {
-    width: 545px;
-  }
-}
-@media screen and (max-width: 574px) {
-  .container {
-    width: 325px;
-  }
-}
-@media screen and (max-width: 374px) {
-  .container {
     width: calc(100% - 30px);
   }
 }
+
+// @media screen and (max-width: 1023px) {
+//   .container {
+//     width: 738px;
+//   }
+// }
+// @media screen and (max-width: 767px) {
+//   .container {
+//     width: 545px;
+//   }
+// }
+// @media screen and (max-width: 574px) {
+//   .container {
+//     width: 325px;
+//   }
+// }
+// @media screen and (max-width: 374px) {
+//   .container {
+//     width: calc(100% - 30px);
+//   }
+// }

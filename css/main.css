@@ -69,26 +69,6 @@ body {
 
 @media screen and (max-width: 1439px) {
   .container {
-    width: 994px;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .container {
-    width: 738px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .container {
-    width: 545px;
-  }
-}
-@media screen and (max-width: 574px) {
-  .container {
-    width: 325px;
-  }
-}
-@media screen and (max-width: 374px) {
-  .container {
     width: calc(100% - 30px);
   }
 }
@@ -210,10 +190,17 @@ body {
   left: 0;
   z-index: 100;
   width: 100%;
+  transition: background-color var(--transition-animation);
+}
+
+.page-header.scrolled,
+.page-header.menu-open {
+  background-color: #241043;
 }
 
 .page-header__container {
   padding-top: 50px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -238,8 +225,8 @@ body {
   position: absolute;
   left: 0;
   top: -7px;
-  width: 17.83px;
-  height: 28.64px;
+  width: 18px;
+  height: 30px;
   backdrop-filter: blur(212.2481689453px);
   box-shadow: 0 4px 107px 0 rgba(255, 86, 246, 0.51);
 }
@@ -412,6 +399,20 @@ body {
     stroke: #fff;
     fill: transparent;
   }
+  .mobile-menu-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+  }
+  .page-header.menu-open + .mobile-menu-backdrop,
+  .mobile-menu.is-open + .mobile-menu-backdrop {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 @media screen and (max-width: 374px) {
   .mobile-menu {
@@ -428,21 +429,10 @@ body {
   width: 255px;
   height: 68px;
   position: relative;
-  background: linear-gradient(130deg, #ff56f6 18.31%, #b936ee 43.26%, #3bace2 85.44%, #406aff 100%);
   clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 40px) 100%, 0 100%, 0 20px);
   border-radius: 5px;
-  border: none;
   z-index: 2;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-explore::before {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  background: #fff;
-  clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 40px) 100%, 0 100%, 0 20px);
-  z-index: -1;
 }
 
 .btn-explore::after {
@@ -452,12 +442,21 @@ body {
   background: linear-gradient(310deg, #ff56f6 18.31%, #b936ee 43.26%, #3bace2 85.44%, #406aff 100%);
   clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 40px) 100%, 0 100%, 0 20px);
   z-index: 0;
+  border-radius: 5px;
+}
+
+.btn-explore__icon {
+  display: inline-block;
+  width: 265px;
+  height: 65px;
 }
 
 .btn-explore-link {
+  position: absolute;
   font-family: var(--font4);
   position: absolute;
   font-weight: 700;
   font-size: 19px;
   color: #fff;
+  z-index: 10;
 }/*# sourceMappingURL=main.css.map */

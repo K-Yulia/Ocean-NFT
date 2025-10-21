@@ -10,9 +10,12 @@
   <body>
     <header class="page-header">
       <div class="page-header__container container">
+        <!-- <div class="logo__icon">
+          <div class="logo__icon2"></div>
+        </div> -->
         <a href="#" class="logo link">
           <svg class="logo__icon">
-            <use href="./images/sprite-2.svg#logo"></use>
+            <use href="./images/sprite.svg#logo"></use>
           </svg>
           <span class="logo-span">Ocean</span>NFT</a
         >
@@ -31,28 +34,28 @@
           <li class="user-account__item">
             <a href="#" class="user-account__link link">
               <svg class="user-account__icon icon-basket">
-                <use href="./images/sprite.svg#icon-basket"></use>
+                <use href="./images/sprite.svg#basket"></use>
               </svg>
             </a>
           </li>
           <li class="user-account__item">
             <a href="#" class="user-account__link link"
               ><svg class="user-account__icon icon-user">
-                <use href="./images/sprite.svg#icon-user"></use>
+                <use href="./images/sprite.svg#user"></use>
               </svg>
             </a>
           </li>
         </ul>
         <button type="button" class="open-mobile-menu-btn" data-menu-open>
           <svg class="open-mobile-menu-btn__icon">
-            <use href="./images/sprite.svg#icon-burger"></use>
+            <use href="./images/sprite.svg#burger"></use>
           </svg>
         </button>
         <div class="mobile-menu js-menu" data-menu>
           <div class="mobile-menu__container">
             <button class="mobile-menu__close-btn" data-menu-close>
               <svg class="mobile-menu__close-icon">
-                <use href="./images/sprite.svg#icon-close"></use>
+                <use href="./images/sprite.svg#close"></use>
               </svg>
             </button>
             <ul class="mobile-nav js-nav list">
@@ -84,6 +87,7 @@
             </ul>
           </div>
         </div>
+        <div class="mobile-menu-backdrop" data-menu-backdrop></div>
       </div>
     </header>
     <main>
@@ -100,8 +104,12 @@
               The world’s first and largest digital marketplace for crypto
               collectibles and non- fungible tokens (NFTs).
             </p>
-            <button class="btn-explore">Explore</button>
-            <a href="#" class="btn-explore-link link">Explore</a>
+            <svg class="btn-explore__icon">
+              <use href="./icons/blog.svg"></use>
+            </svg>
+            <button class="btn-explore">
+              <a href="#" class="btn-explore-link link">Explore</a>
+            </button>
           </div>
         </div>
       </section>

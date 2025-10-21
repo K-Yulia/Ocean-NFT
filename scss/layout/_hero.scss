@@ -1,0 +1,75 @@
+.hero {
+  margin-top: 195px;
+}
+// .btn-explore {
+//   width: 255px; /* або що потрібно */
+//   height: 69px; /* або що потрібно */
+//   background: linear-gradient(
+//     130deg,
+//     #ff56f6 18.31%,
+//     #b936ee 43.26%,
+//     #3bace2 85.44%,
+//     #406aff 100%
+//   );
+//   clip-path: path(
+//     d=
+//       "M44.869 1.30469C44.3779 1.30471 43.8928 1.41374 43.449 1.62402L3.23126 20.6826C2.07332 21.2313 1.33482 22.3983 1.33478 23.6797V64.3154C1.33478 66.147 2.81969 67.6317 4.65118 67.6318H217.311C217.816 67.6318 218.313 67.5172 218.766 67.2959L251.519 51.2969C252.658 50.7407 253.38 49.5843 253.38 48.3174V4.62109C253.38 2.78951 251.895 1.30469 250.063 1.30469H44.869Z"
+//   );
+
+.btn-explore {
+  margin-left: -6px;
+  margin-top: 270px;
+  width: 255px;
+  height: 68px;
+  position: relative;
+  clip-path: polygon(
+    40px 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 40px) 100%,
+    0 100%,
+    0 20px
+  );
+  border-radius: 5px;
+  z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-explore::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: linear-gradient(
+    310deg,
+    #ff56f6 18.31%,
+    #b936ee 43.26%,
+    #3bace2 85.44%,
+    #406aff 100%
+  );
+  clip-path: polygon(
+    40px 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 40px) 100%,
+    0 100%,
+    0 20px
+  );
+  z-index: 0;
+  border-radius: 5px;
+}
+
+.btn-explore__icon {
+  display: inline-block;
+  width: 265px;
+  height: 65px;
+}
+
+.btn-explore-link {
+  position: absolute;
+  font-family: var(--font4);
+  position: absolute;
+  font-weight: 700;
+  font-size: 19px;
+  color: #fff;
+  z-index: 10;
+}
