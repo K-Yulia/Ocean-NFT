@@ -280,27 +280,19 @@ body {
 
 @media screen and (max-width: 1023px) {
   .page-header__container {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: auto auto;
     align-items: center;
-    row-gap: 20px;
   }
   .logo {
     display: flex;
     align-items: center;
-    grid-column: 1;
-    grid-row: 1;
+    margin-right: auto;
   }
   .page-nav {
-    grid-column: 2;
-    grid-row: 1;
     justify-self: end;
-    margin-right: 0;
+    margin-right: 90px;
+    gap: 40px;
   }
   .user-account {
-    grid-column: 1/-1;
-    grid-row: 2;
     justify-self: right;
     display: flex;
     gap: 16px;
