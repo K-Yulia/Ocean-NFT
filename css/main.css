@@ -39,7 +39,6 @@ ol {
 
 img {
   display: block;
-  min-width: 100%;
   height: auto;
 }
 
@@ -413,42 +412,187 @@ body {
 }
 .hero {
   margin-top: 195px;
+  margin-bottom: 100px;
+}
+
+.hero__container {
+  display: flex;
+  gap: 55px;
+}
+
+.hero__text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__main-title {
+  font-family: var(--font8);
+  font-weight: 600;
+  font-size: 66px;
+  line-height: 91px;
+  color: #fff;
+  margin-bottom: 21px;
+  width: 840px;
+}
+
+.hero_main-title_span {
+  background: linear-gradient(312deg, #43a5e3 0%, #ff56f6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 44px;
+  color: #fff;
+  margin-bottom: 43px;
+  width: 650px;
+}
+
+.hero__btn-box {
+  display: flex;
+  gap: 38px;
+  margin-bottom: 69px;
 }
 
 .btn-explore {
-  margin-left: -6px;
-  margin-top: 270px;
-  width: 255px;
-  height: 68px;
   position: relative;
-  clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 40px) 100%, 0 100%, 0 20px);
-  border-radius: 5px;
-  z-index: 2;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-explore::after {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  background: linear-gradient(310deg, #ff56f6 18.31%, #b936ee 43.26%, #3bace2 85.44%, #406aff 100%);
-  clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 40px) 100%, 0 100%, 0 20px);
-  z-index: 0;
-  border-radius: 5px;
+  width: 255px;
+  height: 69px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .btn-explore__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: inline-block;
-  width: 265px;
-  height: 65px;
+  width: 255px;
+  height: 69px;
+}
+
+.btn-create {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .btn-explore-link {
-  position: absolute;
   font-family: var(--font4);
-  position: absolute;
   font-weight: 700;
   font-size: 19px;
+  background: linear-gradient(86deg, #42a6e3 0%, #ff56f6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__benefits {
+  display: flex;
+  gap: 61px;
+}
+
+.hero__benefits__numbers {
+  font-family: var(--font5);
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 53px;
+  letter-spacing: 0.01em;
   color: #fff;
-  z-index: 10;
+}
+
+.hero__benefits__text {
+  font-family: var(--font7);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.hero__benefits__item__center {
+  position: relative;
+}
+
+.hero__benefits__item__center::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1.11px;
+  right: -15px;
+  top: 7px;
+  height: 63px;
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.hero__benefits__item__center::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1.11px;
+  left: -15px;
+  top: 7px;
+  height: 63px;
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.auction-box {
+  width: 401px;
+  height: 477px;
+  display: flex;
+}
+
+.auction-box__img {
+  position: relative;
+  width: 401px;
+  height: 477px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.auction-box__wrapper {
+  position: absolute;
+  bottom: -50px;
+  right: -100px;
+  display: flex;
+}
+
+.auction-box__user-bloc {
+  display: flex;
+}
+
+.auction-box__user-img {
+  width: 29px;
+  height: 29px;
+}
+
+.check {
+  width: 12px;
+  height: 13px;
+}
+
+.auction-box__btn {
+  position: relative;
+  border-radius: 5px;
+  width: 119px;
+  height: 37px;
+  background: linear-gradient(130deg, #ff56f6 18.31%, #b936ee 43.26%, #3bace2 85.44%, #406aff 100%);
+  z-index: 1;
+}
+
+.auction-box__btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 2px;
+  padding: 2px;
+  background: linear-gradient(280deg, #ffa6fa 47%, #3c79d4 97%);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */

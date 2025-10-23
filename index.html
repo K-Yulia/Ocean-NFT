@@ -87,29 +87,165 @@
             </ul>
           </div>
         </div>
-        <div class="mobile-menu-backdrop" data-menu-backdrop>
+        <div class="mobile-menu-backdrop" data-menu-backdrop></div>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="hero__container container">
-          <h1 class="hero__main-title">
-            Discover, collect, and sell<span class="hero_main-title_span">
-              Timeless</span
-            >
-            NFTs
-          </h1>
           <div class="hero__text-wrapper">
+            <h1 class="hero__main-title">
+              Discover, collect, and sell<span class="hero_main-title_span">
+                Timeless</span
+              >
+              NFTs
+            </h1>
             <p class="hero__text">
               The world’s first and largest digital marketplace for crypto
               collectibles and non- fungible tokens (NFTs).
             </p>
-            <svg class="btn-explore__icon">
-              <use href="./icons/blog.svg"></use>
-            </svg>
-            <button class="btn-explore">
-              <a href="#" class="btn-explore-link link">Explore</a>
-            </button>
+            <!-- <svg class="btn-explore__icon">
+              <use href="./icons/bloc.svg"></use>
+            </svg> -->
+            <!-- <svg class="btn-explore__icon">
+              <use href="./images/sprite.svg#bloc"></use>
+            </svg> -->
+            <div class="hero__btn-box">
+              <button type="button" class="btn-explore">
+                <a href="#" class="btn-explore-link link">
+                  <svg class="btn-explore__icon">
+                    <use href="./images/sprite.svg#btn-explore"></use>
+                  </svg>
+                </a>
+              </button>
+              <button type="button" class="btn-create">
+                <a href="#" class="btn-explore-link link">Create NFT’s </a>
+              </button>
+            </div>
+            <ul class="hero__benefits list">
+              <li class="hero__benefits__item">
+                <p class="hero__benefits__numbers">35m+</p>
+                <p class="hero__benefits__text">Artwork</p>
+              </li>
+              <li class="hero__benefits__item hero__benefits__item__center">
+                <p class="hero__benefits__numbers">18m+</p>
+                <p class="hero__benefits__text">Auctions</p>
+              </li>
+              <li class="hero__benefits__item">
+                <p class="hero__benefits__numbers">500k+</p>
+                <p class="hero__benefits__text">Artists</p>
+              </li>
+            </ul>
+          </div>
+          <div class="auction-box">
+            <picture>
+              <!-- <source
+    srcset="./images/team/team-4-375.webp"
+    type="image/webp"
+    media="(max-width: 767px)"
+  /> 
+  <source
+    srcset="./images/team/team-4-375.jpg"
+    media="(max-width: 767px)"
+  /> -->
+
+              <source srcset="./images/1600/hero-1600.webp" type="image/webp" />
+              <img
+                src="./images/1600/hero-1600.png"
+                alt="hero-img"
+                class="auction-box__img"
+              />
+            </picture>
+            <div class="auction-box__wrapper">
+              <picture>
+                <!-- <source
+    srcset="./images/team/team-4-375.webp"
+    type="image/webp"
+    media="(max-width: 767px)"
+  /> 
+  <source
+    srcset="./images/team/team-4-375.jpg"
+    media="(max-width: 767px)"
+  /> -->
+
+                <source
+                  srcset="./images/1600/hero_bloc-1600.webp"
+                  type="image/webp"
+                />
+
+                <img
+                  src="./images/1600/hero_bloc-1600.png"
+                  alt="auction-box__bloc"
+                  class="auction-box__bloc"
+                />
+              </picture>
+
+              <!-- <div class="glass-box"></div> -->
+              <div class="auction-box__text-wrapper">
+                <div class="auction-box__text-box">
+                  <h2 class="auction-box__title">3D Abstract Hand</h2>
+                  <div class="auction-box__user-bloc">
+                    <picture>
+                      <!-- <source
+    srcset="./images/team/team-4-375.webp"
+    type="image/webp"
+    media="(max-width: 767px)"
+  /> 
+  <source
+    srcset="./images/team/team-4-375.jpg"
+    media="(max-width: 767px)"
+  /> -->
+
+                      <source
+                        srcset="./images/1600/user-1.webp"
+                        type="image/webp"
+                      />
+
+                      <img
+                        src="./images/1600/user-1.png"
+                        alt="user-1"
+                        class="auction-box__user-img"
+                      />
+                    </picture>
+                    <p class="auction-box__user-name">@jhonartist</p>
+                    <svg class="auction-box__user-check">
+                      <use href="./images/1600/check.svg"></use>
+                    </svg>
+                  </div>
+                  <p class="auction-box__text-price">Reserve price</p>
+                  <p class="auction-box__price">
+                    <svg class="auction-box__price-icon">
+                      <use href="./images/sprite.svg#ethereum-icon"></use>
+                    </svg>
+                    ETH 9.31
+                    <span class="auction-box__price-span">($29,8846)</span>
+                  </p>
+                </div>
+                <div class="auction-time">
+                  <p class="auction-time__text">Auction Ends in</p>
+                  <ul class="auction-time__list list">
+                    <li class="auction-time__item">
+                      <p class="auction-time__number">18</p>
+                      <p class="auction-time__text">Hours</p>
+                    </li>
+                    <li class="auction-time__item">
+                      <p class="auction-time__number">25</p>
+                      <p class="auction-time__text">Mins</p>
+                    </li>
+                    <li class="auction-time__item">
+                      <p class="auction-time__number">44</p>
+                      <p class="auction-time__text">Secs</p>
+                    </li>
+                  </ul>
+                  <button class="auction-box__btn">
+                    Place Bid
+                    <svg class="auction-box__btn-icon">
+                      <use href="./images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
