@@ -10,9 +10,6 @@
   <body>
     <header class="page-header">
       <div class="page-header__container container">
-        <!-- <div class="logo__icon">
-          <div class="logo__icon2"></div>
-        </div> -->
         <a href="#" class="logo link">
           <svg class="logo__icon">
             <use href="./images/sprite.svg#logo"></use>
@@ -104,22 +101,19 @@
               The world’s first and largest digital marketplace for crypto
               collectibles and non- fungible tokens (NFTs).
             </p>
-            <!-- <svg class="btn-explore__icon">
-              <use href="./icons/bloc.svg"></use>
-            </svg> -->
-            <!-- <svg class="btn-explore__icon">
-              <use href="./images/sprite.svg#bloc"></use>
-            </svg> -->
             <div class="hero__btn-box">
-              <button type="button" class="btn-explore">
-                <a href="#" class="btn-explore-link link">
+              <button type="button" class="hero__btn-explore">
+                <a href="#" class="hero__btn-explore__link link"
+                  >Explore
                   <svg class="btn-explore__icon">
-                    <use href="./images/sprite.svg#btn-explore"></use>
+                    <use href="./images/sprite.svg#arrow"></use>
                   </svg>
                 </a>
               </button>
-              <button type="button" class="btn-create">
-                <a href="#" class="btn-explore-link link">Create NFT’s </a>
+              <button type="button" class="hero__btn-create">
+                <a href="#" class="hero__btn-create__link link"
+                  >Create NFT’s
+                </a>
               </button>
             </div>
             <ul class="hero__benefits list">
@@ -139,71 +133,23 @@
           </div>
           <div class="auction-box">
             <picture>
-              <!-- <source
-    srcset="./images/team/team-4-375.webp"
-    type="image/webp"
-    media="(max-width: 767px)"
-  /> 
-  <source
-    srcset="./images/team/team-4-375.jpg"
-    media="(max-width: 767px)"
-  /> -->
-
-              <source srcset="./images/1600/hero-1600.webp" type="image/webp" />
+              <source srcset="./images/hero-img1.webp" type="image/webp" />
               <img
-                src="./images/1600/hero-1600.png"
+                src="./images/hero-img1.png"
                 alt="hero-img"
-                class="auction-box__img"
+                class="hero-img"
               />
             </picture>
             <div class="auction-box__wrapper">
-              <picture>
-                <!-- <source
-    srcset="./images/team/team-4-375.webp"
-    type="image/webp"
-    media="(max-width: 767px)"
-  /> 
-  <source
-    srcset="./images/team/team-4-375.jpg"
-    media="(max-width: 767px)"
-  /> -->
-
-                <source
-                  srcset="./images/1600/hero_bloc-1600.webp"
-                  type="image/webp"
-                />
-
-                <img
-                  src="./images/1600/hero_bloc-1600.png"
-                  alt="auction-box__bloc"
-                  class="auction-box__bloc"
-                />
-              </picture>
-
-              <!-- <div class="glass-box"></div> -->
               <div class="auction-box__text-wrapper">
                 <div class="auction-box__text-box">
                   <h2 class="auction-box__title">3D Abstract Hand</h2>
                   <div class="auction-box__user-bloc">
                     <picture>
-                      <!-- <source
-    srcset="./images/team/team-4-375.webp"
-    type="image/webp"
-    media="(max-width: 767px)"
-  /> 
-  <source
-    srcset="./images/team/team-4-375.jpg"
-    media="(max-width: 767px)"
-  /> -->
-
-                      <source
-                        srcset="./images/1600/user-1.webp"
-                        type="image/webp"
-                      />
-
+                      <source srcset="./images/user-1.webp" type="image/webp" />
                       <img
-                        src="./images/1600/user-1.png"
-                        alt="user-1"
+                        src="./images/user-1.png"
+                        alt="user-1 img"
                         class="auction-box__user-img"
                       />
                     </picture>
@@ -226,26 +172,52 @@
                   <ul class="auction-time__list list">
                     <li class="auction-time__item">
                       <p class="auction-time__number">18</p>
-                      <p class="auction-time__text">Hours</p>
+                      <p class="auction-time__text-time">Hours</p>
                     </li>
                     <li class="auction-time__item">
                       <p class="auction-time__number">25</p>
-                      <p class="auction-time__text">Mins</p>
+                      <p class="auction-time__text-time">Mins</p>
                     </li>
                     <li class="auction-time__item">
                       <p class="auction-time__number">44</p>
-                      <p class="auction-time__text">Secs</p>
+                      <p class="auction-time__text-time">Secs</p>
                     </li>
                   </ul>
-                  <button class="auction-box__btn">
-                    Place Bid
-                    <svg class="auction-box__btn-icon">
-                      <use href="./images/sprite.svg#arrow"></use>
-                    </svg>
+                  <button type="button" class="auction-box__btn">
+                    <a href="#" class="auction-box__btn__link link"
+                      >Place Bid
+                      <svg class="auction-box__btn__icon">
+                        <use href="./images/sprite.svg#arrow"></use>
+                      </svg>
+                    </a>
                   </button>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="our-partners">
+            <ul class="our-partners__list list">
+              <li class="our-partners__item">
+                <svg class="our-partners__icon logo-1">
+                  <use href="./images/sprite.svg#binance_logo"></use>
+                </svg>
+              </li>
+              <li class="our-partners__item">
+                <svg class="our-partners__icon logo-2">
+                  <use href="./images/sprite.svg#ethereum_logo"></use>
+                </svg>
+              </li>
+              <li class="our-partners__item">
+                <svg class="our-partners__icon logo-3">
+                  <use href="./images/sprite.svg#blockchain_logo"></use>
+                </svg>
+              </li>
+              <li class="our-partners__item">
+                <svg class="our-partners__icon logo-4">
+                  <use href="./images/sprite.svg#bitMex_logo"></use>
+                </svg>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

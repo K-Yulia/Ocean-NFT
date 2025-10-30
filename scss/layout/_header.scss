@@ -27,7 +27,7 @@
   font-size: 19px;
   color: var(--text-color-primary);
   margin-right: 230px;
-  padding-left: 24px;
+  padding-left: 30px;
 }
 .logo-span {
   color: rgba(255, 255, 255, 0.6);
@@ -74,6 +74,7 @@
   width: 22.11px;
   height: 22.11px;
   padding-top: 5px;
+  margin-right: 5px;
 }
 .open-mobile-menu-btn {
   display: none;
@@ -118,6 +119,7 @@
   .logo {
     font-size: 16px;
     padding-left: 14px;
+    margin-left: 10px;
   }
   .logo__icon {
     // width: 13.44px;
@@ -141,6 +143,7 @@
     fill: #fff;
     width: 21.71px;
     height: 19.64px;
+    margin-right: 10px;
   }
   .mobile-menu {
     display: block;
