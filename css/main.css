@@ -52,7 +52,7 @@ body {
   color: var(--text-color-primary);
   margin: 0;
   width: 100%;
-  background-image: url("..//../images/1600/bg-1600.jpg");
+  background-image: url("..//../images/bg-1600.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
