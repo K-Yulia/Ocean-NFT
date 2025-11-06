@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ocean-NFT</title>
     <link rel="icon" href="./images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__container container">
         <a href="#" class="logo link">
-          <svg class="logo__icon">
-            <use href="./images/sprite.svg#logo"></use>
-          </svg>
+          <picture>
+            <source srcset="./images/logo.webp" type="image/webp" />
+            <img src="./images/logo.png" alt="logo__icon" class="logo__icon" />
+          </picture>
           <span class="logo-span">Ocean</span>NFT</a
         >
         <ul class="page-nav list">
@@ -131,13 +136,22 @@
               </li>
             </ul>
           </div>
+          <div class="hero__vector">
+            <svg class="hero__vector__icon">
+              <use href="./images/sprite.svg#tilde"></use>
+            </svg>
+          </div>
           <div class="auction-box">
             <picture>
-              <source srcset="./images/hero-img1.webp" type="image/webp" />
+              <source srcset="./images/hero-img.webp" type="image/webp" />
+              <img src="./images/hero-img.png" alt="hero-img" class="hero-img"
+            /></picture>
+            <picture>
+              <source srcset="./images/hero-mob.webp" type="image/webp" />
               <img
-                src="./images/hero-img1.png"
+                src="./images/hero-mob.png"
                 alt="hero-img"
-                class="hero-img"
+                class="hero-img-mob"
               />
             </picture>
             <div class="auction-box__wrapper">
@@ -154,9 +168,14 @@
                       />
                     </picture>
                     <p class="auction-box__user-name">@jhonartist</p>
-                    <svg class="auction-box__user-check">
-                      <use href="./images/1600/check.svg"></use>
-                    </svg>
+                    <picture>
+                      <source srcset="./images/check.webp" type="image/webp" />
+                      <img
+                        src="./images/check.png"
+                        alt="auction-box__user-check"
+                        class="auction-box__user-check"
+                      />
+                    </picture>
                   </div>
                   <p class="auction-box__text-price">Reserve price</p>
                   <p class="auction-box__price">
@@ -221,8 +240,884 @@
           </div>
         </div>
       </section>
+      <section class="top-now">
+        <div class="top-now__container container">
+          <div class="swiper top-now__slider">
+            <div class="top-now__slider-header">
+              <h2 class="top-now__slider-title">Top NFT’s now</h2>
+              <div class="swiper-button-next top-now__slider-btn-next">
+                <p class="top-now__slider-text">View all</p>
+                <svg class="top-now__slider__btn-icon">
+                  <use href="./images/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="swiper-wrapper top-now__slider__wrapper">
+              <div class="swiper-slide top-now__slide">
+                <div class="top-now__slide-box">
+                  <picture>
+                    <source srcset="./images/img-1.webp" type="image/webp" />
+                    <img
+                      src="./images/img-1.png"
+                      alt="slide-img-1"
+                      class="top-now__slide__img"
+                    />
+                  </picture>
+                  <div class="top-now__slide__text-wrapper">
+                    <div class="top-now__slide__text-box">
+                      <h2 class="top-now__slide__title">
+                        Apollo Eth #1289 NFT
+                      </h2>
+                      <div class="top-now__slide__user-bloc">
+                        <picture>
+                          <source
+                            srcset="./images/user-1.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            src="./images/user-1.png"
+                            alt="user-1 img"
+                            class="top-now__slide__user-img"
+                          />
+                        </picture>
+                        <p class="top-now__slide__user-name">@jhonartist</p>
+                        <picture>
+                          <source
+                            srcset="./images/check.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            src="./images/check.png"
+                            alt="top-now__slide__user-check"
+                            class="top-now__slide__user-check"
+                          />
+                        </picture>
+                      </div>
+                      <p class="top-now__slide__text-price">Reserve price</p>
+                      <p class="top-now__slide__price">
+                        <svg class="top-now__slide__price-icon">
+                          <use href="./images/sprite.svg#ethereum-icon"></use>
+                        </svg>
+                        ETH 9.31
+                        <span class="top-now__slide__price-span"
+                          >($29,8846)</span
+                        >
+                      </p>
+                    </div>
+                    <div class="top-now__slide-time">
+                      <p class="top-now__slide__text">Auction Ends in</p>
+                      <ul class="top-now__slide__list list">
+                        <li class="top-now__slide__item">
+                          <p class="top-now__slide__number">18</p>
+                          <p class="top-now__slide__text-time">Hours</p>
+                        </li>
+                        <li class="top-now__slide_item">
+                          <p class="top-now__slide__number">25</p>
+                          <p class="top-now__slide__text-time">Mins</p>
+                        </li>
+                        <li class="top-now__slide__item">
+                          <p class="top-now__slide__number">44</p>
+                          <p class="top-now__slide__text-time">Secs</p>
+                        </li>
+                      </ul>
+                      <button type="button" class="top-now__slide__btn">
+                        <a href="#" class="top-now__slide__btn__link link"
+                          >Place Bid
+                          <svg class="top-now__slide__btn__icon">
+                            <use href="./images/sprite.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide top-now__slide">
+                <div class="top-now__slide-box">
+                  <picture>
+                    <source srcset="./images/img-2.webp" type="image/webp" />
+                    <img
+                      src="./images/img-2.png"
+                      alt="slide-img-2"
+                      class="top-now__slide__img"
+                    />
+                  </picture>
+
+                  <div class="top-now__slide__text-wrapper">
+                    <div class="top-now__slide__text-box">
+                      <h2 class="top-now__slide__title">
+                        Sassy Bull #1169 Art
+                      </h2>
+                      <div class="top-now__slide__user-bloc">
+                        <picture>
+                          <source
+                            srcset="./images/user-2.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            src="./images/user-2.png"
+                            alt="user-2 img"
+                            class="top-now__slide__user-img"
+                          />
+                        </picture>
+                        <p class="top-now__slide__user-name">@jhonartist</p>
+                        <picture>
+                          <source
+                            srcset="./images/check.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            src="./images/check.png"
+                            alt="top-now__slide__user-check"
+                            class="top-now__slide__user-check"
+                          />
+                        </picture>
+                      </div>
+                      <p class="top-now__slide__text-price">Reserve price</p>
+                      <p class="top-now__slide__price">
+                        <svg class="top-now__slide__price-icon">
+                          <use href="./images/sprite.svg#ethereum-icon"></use>
+                        </svg>
+                        ETH 9.31
+                        <span class="top-now__slide__price-span"
+                          >($29,8846)</span
+                        >
+                      </p>
+                    </div>
+                    <div class="top-now__slide-time">
+                      <p class="top-now__slide__text">Auction Ends in</p>
+                      <ul class="top-now__slide__list list">
+                        <li class="top-now__slide__item">
+                          <p class="top-now__slide__number">09</p>
+                          <p class="top-now__slide__text-time">Hours</p>
+                        </li>
+                        <li class="top-now__slide_item">
+                          <p class="top-now__slide__number">15</p>
+                          <p class="top-now__slide__text-time">Mins</p>
+                        </li>
+                        <li class="top-now__slide__item">
+                          <p class="top-now__slide__number">23</p>
+                          <p class="top-now__slide__text-time">Secs</p>
+                        </li>
+                      </ul>
+                      <button type="button" class="top-now__slide__btn">
+                        <a href="#" class="top-now__slide__btn__link link"
+                          >Place Bid
+                          <svg class="top-now__slide__btn__icon">
+                            <use href="./images/sprite.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide top-now__slide">
+                <div class="top-now__slide-box">
+                  <picture>
+                    <source srcset="./images/img-3.webp" type="image/webp" />
+                    <img
+                      src="./images/img-3.png"
+                      alt="slide-img-3"
+                      class="top-now__slide__img"
+                    />
+                  </picture>
+                  <div class="top-now__slide__text-wrapper">
+                    <div class="top-now__slide__text-box">
+                      <h2 class="top-now__slide__title">Satisfying 3D Art</h2>
+                      <div class="top-now__slide__user-bloc">
+                        <picture>
+                          <source
+                            srcset="./images/user-3.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            src="./images/user-3.png"
+                            alt="user-3 img"
+                            class="top-now__slide__user-img"
+                          />
+                        </picture>
+                        <p class="top-now__slide__user-name">@jhonartist</p>
+                        <picture>
+                          <source
+                            srcset="./images/check.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            src="./images/check.png"
+                            alt="top-now__slide__user-check"
+                            class="top-now__slide__user-check"
+                          />
+                        </picture>
+                      </div>
+                      <p class="top-now__slide__text-price">Reserve price</p>
+                      <p class="top-now__slide__price">
+                        <svg class="top-now__slide__price-icon">
+                          <use href="./images/sprite.svg#ethereum-icon"></use>
+                        </svg>
+                        ETH 9.31
+                        <span class="top-now__slide__price-span"
+                          >($29,8846)</span
+                        >
+                      </p>
+                    </div>
+                    <div class="top-now__slide-time">
+                      <p class="top-now__slide__text">Auction Ends in</p>
+                      <ul class="top-now__slide__list list">
+                        <li class="top-now__slide__item">
+                          <p class="top-now__slide__number">23</p>
+                          <p class="top-now__slide__text-time">Hours</p>
+                        </li>
+                        <li class="top-now__slide_item">
+                          <p class="top-now__slide__number">32</p>
+                          <p class="top-now__slide__text-time">Mins</p>
+                        </li>
+                        <li class="top-now__slide__item">
+                          <p class="top-now__slide__number">56</p>
+                          <p class="top-now__slide__text-time">Secs</p>
+                        </li>
+                      </ul>
+                      <button type="button" class="top-now__slide__btn">
+                        <a href="#" class="top-now__slide__btn__link link"
+                          >Place Bid
+                          <svg class="top-now__slide__btn__icon">
+                            <use href="./images/sprite.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide top-now__slide">
+                <div class="top-now__slide-box">
+                  <picture>
+                    <source srcset="./images/img-1.webp" type="image/webp" />
+                    <img
+                      src="./images/img-1.png"
+                      alt="slide-img-1"
+                      class="top-now__slide__img"
+                    />
+                  </picture>
+                  <div class="top-now__slide__text-wrapper">
+                    <div class="top-now__slide__text-box">
+                      <h2 class="top-now__slide__title">
+                        Apollo Eth #1289 NFT
+                      </h2>
+                      <div class="top-now__slide__user-bloc">
+                        <picture>
+                          <source
+                            srcset="./images/user-1.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            src="./images/user-1.png"
+                            alt="user-1 img"
+                            class="top-now__slide__user-img"
+                          />
+                        </picture>
+                        <p class="top-now__slide__user-name">@jhonartist</p>
+                        <picture>
+                          <source
+                            srcset="./images/check.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            src="./images/check.png"
+                            alt="top-now__slide__user-check"
+                            class="top-now__slide__user-check"
+                          />
+                        </picture>
+                      </div>
+                      <p class="top-now__slide__text-price">Reserve price</p>
+                      <p class="top-now__slide__price">
+                        <svg class="top-now__slide__price-icon">
+                          <use href="./images/sprite.svg#ethereum-icon"></use>
+                        </svg>
+                        ETH 9.31
+                        <span class="top-now__slide__price-span"
+                          >($29,8846)</span
+                        >
+                      </p>
+                    </div>
+                    <div class="top-now__slide-time">
+                      <p class="top-now__slide__text">Auction Ends in</p>
+                      <ul class="top-now__slide__list list">
+                        <li class="top-now__slide__item">
+                          <p class="top-now__slide__number">18</p>
+                          <p class="top-now__slide__text-time">Hours</p>
+                        </li>
+                        <li class="top-now__slide_item">
+                          <p class="top-now__slide__number">25</p>
+                          <p class="top-now__slide__text-time">Mins</p>
+                        </li>
+                        <li class="top-now__slide__item">
+                          <p class="top-now__slide__number">44</p>
+                          <p class="top-now__slide__text-time">Secs</p>
+                        </li>
+                      </ul>
+                      <button type="button" class="top-now__slide__btn">
+                        <a href="#" class="top-now__slide__btn__link link"
+                          >Place Bid
+                          <svg class="top-now__slide__btn__icon">
+                            <use href="./images/sprite.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide top-now__slide">
+                <div class="top-now__slide-box">
+                  <picture>
+                    <source srcset="./images/img-2.webp" type="image/webp" />
+                    <img
+                      src="./images/img-2.png"
+                      alt="slide-img-2"
+                      class="top-now__slide__img"
+                    />
+                  </picture>
+
+                  <div class="top-now__slide__text-wrapper">
+                    <div class="top-now__slide__text-box">
+                      <h2 class="top-now__slide__title">
+                        Sassy Bull #1169 Art
+                      </h2>
+                      <div class="top-now__slide__user-bloc">
+                        <picture>
+                          <source
+                            srcset="./images/user-2.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            src="./images/user-2.png"
+                            alt="user-2 img"
+                            class="top-now__slide__user-img"
+                          />
+                        </picture>
+                        <p class="top-now__slide__user-name">@jhonartist</p>
+                        <picture>
+                          <source
+                            srcset="./images/check.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            src="./images/check.png"
+                            alt="top-now__slide__user-check"
+                            class="top-now__slide__user-check"
+                          />
+                        </picture>
+                      </div>
+                      <p class="top-now__slide__text-price">Reserve price</p>
+                      <p class="top-now__slide__price">
+                        <svg class="top-now__slide__price-icon">
+                          <use href="./images/sprite.svg#ethereum-icon"></use>
+                        </svg>
+                        ETH 9.31
+                        <span class="top-now__slide__price-span"
+                          >($29,8846)</span
+                        >
+                      </p>
+                    </div>
+                    <div class="top-now__slide-time">
+                      <p class="top-now__slide__text">Auction Ends in</p>
+                      <ul class="top-now__slide__list list">
+                        <li class="top-now__slide__item">
+                          <p class="top-now__slide__number">09</p>
+                          <p class="top-now__slide__text-time">Hours</p>
+                        </li>
+                        <li class="top-now__slide_item">
+                          <p class="top-now__slide__number">15</p>
+                          <p class="top-now__slide__text-time">Mins</p>
+                        </li>
+                        <li class="top-now__slide__item">
+                          <p class="top-now__slide__number">23</p>
+                          <p class="top-now__slide__text-time">Secs</p>
+                        </li>
+                      </ul>
+                      <button type="button" class="top-now__slide__btn">
+                        <a href="#" class="top-now__slide__btn__link link"
+                          >Place Bid
+                          <svg class="top-now__slide__btn__icon">
+                            <use href="./images/sprite.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide top-now__slide">
+                <div class="top-now__slide-box">
+                  <picture>
+                    <source srcset="./images/img-3.webp" type="image/webp" />
+                    <img
+                      src="./images/img-3.png"
+                      alt="slide-img-3"
+                      class="top-now__slide__img"
+                    />
+                  </picture>
+                  <div class="top-now__slide__text-wrapper">
+                    <div class="top-now__slide__text-box">
+                      <h2 class="top-now__slide__title">Satisfying 3D Art</h2>
+                      <div class="top-now__slide__user-bloc">
+                        <picture>
+                          <source
+                            srcset="./images/user-3.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            src="./images/user-3.png"
+                            alt="user-3 img"
+                            class="top-now__slide__user-img"
+                          />
+                        </picture>
+                        <p class="top-now__slide__user-name">@jhonartist</p>
+                        <picture>
+                          <source
+                            srcset="./images/check.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            src="./images/check.png"
+                            alt="top-now__slide__user-check"
+                            class="top-now__slide__user-check"
+                          />
+                        </picture>
+                      </div>
+                      <p class="top-now__slide__text-price">Reserve price</p>
+                      <p class="top-now__slide__price">
+                        <svg class="top-now__slide__price-icon">
+                          <use href="./images/sprite.svg#ethereum-icon"></use>
+                        </svg>
+                        ETH 9.31
+                        <span class="top-now__slide__price-span"
+                          >($29,8846)</span
+                        >
+                      </p>
+                    </div>
+                    <div class="top-now__slide-time">
+                      <p class="top-now__slide__text">Auction Ends in</p>
+                      <ul class="top-now__slide__list list">
+                        <li class="top-now__slide__item">
+                          <p class="top-now__slide__number">23</p>
+                          <p class="top-now__slide__text-time">Hours</p>
+                        </li>
+                        <li class="top-now__slide_item">
+                          <p class="top-now__slide__number">32</p>
+                          <p class="top-now__slide__text-time">Mins</p>
+                        </li>
+                        <li class="top-now__slide__item">
+                          <p class="top-now__slide__number">56</p>
+                          <p class="top-now__slide__text-time">Secs</p>
+                        </li>
+                      </ul>
+                      <button type="button" class="top-now__slide__btn">
+                        <a href="#" class="top-now__slide__btn__link link"
+                          >Place Bid
+                          <svg class="top-now__slide__btn__icon">
+                            <use href="./images/sprite.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-now__parent-block">
+              <div class="swiper-button-next top-now__slider-btn-next__mob">
+                <a class="top-now__slider-text__mob"
+                  >Explore
+                  <svg class="top-now__slider__btn-icon__mob">
+                    <use href="./images/sprite.svg#arrow"></use></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="filter">
+        <div class="filter__container container">
+          <div class="filter__text-wrapper">
+            <h2 class="filter__title">Explore Collections</h2>
+            <ul class="filter__list list">
+              <li class="filter__item">
+                <button class="filter__btn">
+                  <a href="#" class="filter__link link">Photography</a>
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn">
+                  <a href="#" class="filter__link link">Sports</a>
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn">
+                  <a href="#" class="filter__link link">Brands</a>
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn">
+                  <a href="#" class="filter__link link">Collectibles</a>
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn">
+                  <a href="#" class="filter__link link">Art</a>
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn">
+                  <a href="#" class="filter__link link">Utility</a>
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn">
+                  <a href="#" class="filter__link link">Brands</a>
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn">
+                  <a href="#" class="filter__link link">Collectibles</a>
+                </button>
+              </li>
+            </ul>
+            <button class="filter__btn-view">
+              <a href="#" class="filter__btn-view__link link"
+                >View all<svg class="filter__btn-view__icon">
+                  <use href="./images/sprite.svg#arrow"></use></svg
+              ></a>
+            </button>
+          </div>
+          <div class="filter__img-wrapper">
+            <picture>
+              <source srcset="./images/filter__img.webp" type="image/webp" />
+              <img
+                src="./images/filter__img.png"
+                alt="filter__img"
+                class="filter__img"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="explore">
+        <div class="explore__container container">
+          <div class="swiper explore__slider">
+            <div class="explore__slider-header">
+              <h2 class="explore__slider-title">Explore Collections</h2>
+              <div class="swiper-button-next explore__slider-btn-next">
+                <p class="explore__slider-text">View all</p>
+                <svg class="explore__slider__btn-icon">
+                  <use href="./images/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="swiper-wrapper explore__slider__wrapper">
+              <div class="swiper-slide explore__slide">
+                <picture>
+                  <source srcset="./images/explore-bg.webp" type="image/webp" />
+                  <img
+                    src="./images/explore-bg.png"
+                    alt="explore__slide-bg"
+                    class="explore__slide-bg"
+                  />
+                </picture>
+                <picture>
+                  <source srcset="./images/explore-1.webp" type="image/webp" />
+                  <img
+                    src="./images/explore-1.png"
+                    alt="explore__slide-img-1"
+                    class="explore__slide-img"
+                  />
+                </picture>
+                <div class="explore__slide__text-wrapper">
+                  <h3 class="explore__slide__title">Jhones Nickey</h3>
+                  <a href="#" class="explore__slide__link link"
+                    >@jhonartist<picture>
+                      <source srcset="./images/check.webp" type="image/webp" />
+                      <img
+                        src="./images/check.png"
+                        alt="explore__slide__link-icon"
+                        class="explore__slide__link-icon"
+                      /> </picture
+                  ></a>
+                  <ul class="explore__slide__user-info list">
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">125</p>
+                      <p class="explore__slide__user-info__text">Folowers</p>
+                    </li>
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">256</p>
+                      <p class="explore__slide__user-info__text">Following</p>
+                    </li>
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">129</p>
+                      <p class="explore__slide__user-info__text">Artworks</p>
+                    </li>
+                  </ul>
+                  <button class="explore__slide__btn">
+                    <a href="#" class="explore__slide__btn-link link">Follow</a>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide explore__slide">
+                <picture>
+                  <source srcset="./images/explore-bg.webp" type="image/webp" />
+                  <img
+                    src="./images/explore-bg.png"
+                    alt="explore__slide-bg"
+                    class="explore__slide-bg"
+                  />
+                </picture>
+                <picture>
+                  <source srcset="./images/explore-2.webp" type="image/webp" />
+                  <img
+                    src="./images/explore-2.png"
+                    alt="explore__slide-img-2"
+                    class="explore__slide-img"
+                  />
+                </picture>
+                <div class="explore__slide__text-wrapper">
+                  <h3 class="explore__slide__title">Cody Fisher</h3>
+                  <a href="#" class="explore__slide__link link"
+                    >@codyfishe<picture>
+                      <source srcset="./images/check.webp" type="image/webp" />
+                      <img
+                        src="./images/check.png"
+                        alt="explore__slide__link-icon"
+                        class="explore__slide__link-icon"
+                      /> </picture
+                  ></a>
+                  <ul class="explore__slide__user-info list">
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">356</p>
+                      <p class="explore__slide__user-info__text">Folowers</p>
+                    </li>
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">456</p>
+                      <p class="explore__slide__user-info__text">Following</p>
+                    </li>
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">89</p>
+                      <p class="explore__slide__user-info__text">Artworks</p>
+                    </li>
+                  </ul>
+                  <button class="explore__slide__btn">
+                    <a href="#" class="explore__slide__btn-link link">Follow</a>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide explore__slide">
+                <picture>
+                  <source srcset="./images/explore-bg.webp" type="image/webp" />
+                  <img
+                    src="./images/explore-bg.png"
+                    alt="explore__slide-bg"
+                    class="explore__slide-bg"
+                  />
+                </picture>
+                <picture>
+                  <source srcset="./images/explore-3.webp" type="image/webp" />
+                  <img
+                    src="./images/explore-3.png"
+                    alt="explore__slide-img-3"
+                    class="explore__slide-img"
+                  />
+                </picture>
+                <div class="explore__slide__text-wrapper">
+                  <h3 class="explore__slide__title">Jerome Bell</h3>
+                  <a href="#" class="explore__slide__link link"
+                    >@jeromebt<picture>
+                      <source srcset="./images/check.webp" type="image/webp" />
+                      <img
+                        src="./images/check.png"
+                        alt="explore__slide__link-icon"
+                        class="explore__slide__link-icon"
+                      /> </picture
+                  ></a>
+                  <ul class="explore__slide__user-info list">
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">546</p>
+                      <p class="explore__slide__user-info__text">Folowers</p>
+                    </li>
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">789</p>
+                      <p class="explore__slide__user-info__text">Following</p>
+                    </li>
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">54</p>
+                      <p class="explore__slide__user-info__text">Artworks</p>
+                    </li>
+                  </ul>
+                  <button class="explore__slide__btn">
+                    <a href="#" class="explore__slide__btn-link link">Follow</a>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide explore__slide">
+                <picture>
+                  <source srcset="./images/explore-bg.webp" type="image/webp" />
+                  <img
+                    src="./images/explore-bg.png"
+                    alt="explore__slide-bg"
+                    class="explore__slide-bg"
+                  />
+                </picture>
+                <picture>
+                  <source srcset="./images/explore-1.webp" type="image/webp" />
+                  <img
+                    src="./images/explore-1.png"
+                    alt="explore__slide-img-1"
+                    class="explore__slide-img"
+                  />
+                </picture>
+                <div class="explore__slide__text-wrapper">
+                  <h3 class="explore__slide__title">Jhones Nickey</h3>
+                  <a href="#" class="explore__slide__link link"
+                    >@jhonartist<picture>
+                      <source srcset="./images/check.webp" type="image/webp" />
+                      <img
+                        src="./images/check.png"
+                        alt="explore__slide__link-icon"
+                        class="explore__slide__link-icon"
+                      /> </picture
+                  ></a>
+                  <ul class="explore__slide__user-info list">
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">125</p>
+                      <p class="explore__slide__user-info__text">Folowers</p>
+                    </li>
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">256</p>
+                      <p class="explore__slide__user-info__text">Following</p>
+                    </li>
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">129</p>
+                      <p class="explore__slide__user-info__text">Artworks</p>
+                    </li>
+                  </ul>
+                  <button class="explore__slide__btn">
+                    <a href="#" class="explore__slide__btn-link link">Follow</a>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide explore__slide">
+                <picture>
+                  <source srcset="./images/explore-bg.webp" type="image/webp" />
+                  <img
+                    src="./images/explore-bg.png"
+                    alt="explore__slide-bg"
+                    class="explore__slide-bg"
+                  />
+                </picture>
+                <picture>
+                  <source srcset="./images/explore-2.webp" type="image/webp" />
+                  <img
+                    src="./images/explore-2.png"
+                    alt="explore__slide-img-2"
+                    class="explore__slide-img"
+                  />
+                </picture>
+                <div class="explore__slide__text-wrapper">
+                  <h3 class="explore__slide__title">Cody Fisher</h3>
+                  <a href="#" class="explore__slide__link link"
+                    >@codyfishe<picture>
+                      <source srcset="./images/check.webp" type="image/webp" />
+                      <img
+                        src="./images/check.png"
+                        alt="explore__slide__link-icon"
+                        class="explore__slide__link-icon"
+                      /> </picture
+                  ></a>
+                  <ul class="explore__slide__user-info list">
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">356</p>
+                      <p class="explore__slide__user-info__text">Folowers</p>
+                    </li>
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">456</p>
+                      <p class="explore__slide__user-info__text">Following</p>
+                    </li>
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">89</p>
+                      <p class="explore__slide__user-info__text">Artworks</p>
+                    </li>
+                  </ul>
+                  <button class="explore__slide__btn">
+                    <a href="#" class="explore__slide__btn-link link">Follow</a>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide explore__slide">
+                <picture>
+                  <source srcset="./images/explore-bg.webp" type="image/webp" />
+                  <img
+                    src="./images/explore-bg.png"
+                    alt="explore__slide-bg"
+                    class="explore__slide-bg"
+                  />
+                </picture>
+                <picture>
+                  <source srcset="./images/explore-3.webp" type="image/webp" />
+                  <img
+                    src="./images/explore-3.png"
+                    alt="explore__slide-img-3"
+                    class="explore__slide-img"
+                  />
+                </picture>
+                <div class="explore__slide__text-wrapper">
+                  <h3 class="explore__slide__title">Jerome Bell</h3>
+                  <a href="#" class="explore__slide__link link"
+                    >@jeromebt<picture>
+                      <source srcset="./images/check.webp" type="image/webp" />
+                      <img
+                        src="./images/check.png"
+                        alt="explore__slide__link-icon"
+                        class="explore__slide__link-icon"
+                      /> </picture
+                  ></a>
+                  <ul class="explore__slide__user-info list">
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">546</p>
+                      <p class="explore__slide__user-info__text">Folowers</p>
+                    </li>
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">789</p>
+                      <p class="explore__slide__user-info__text">Following</p>
+                    </li>
+                    <li class="explore__slide__user-info__item">
+                      <p class="explore__slide__user-info__number">54</p>
+                      <p class="explore__slide__user-info__text">Artworks</p>
+                    </li>
+                  </ul>
+                  <button class="explore__slide__btn">
+                    <a href="#" class="explore__slide__btn-link link">Follow</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="explore__parent-block">
+              <div class="swiper-button-next explore__slider-btn-next__mob">
+                <a class="explore__slider-text__mob"
+                  >Explore
+                  <svg class="explore__slider__btn-icon__mob">
+                    <use href="./images/sprite.svg#arrow"></use></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="top-sellers"></section> -->
+      <!-- <section class="what-are-NFT’s"></section> -->
+      <!-- <section class="subscribe-to-us"></section> -->
     </main>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
