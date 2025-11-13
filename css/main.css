@@ -1962,7 +1962,7 @@ body {
 .what-are-NFT {
   margin-top: 160px;
   position: relative;
-  background-image: url(/images/what-are-NFT.png);
+  background-image: url(../images/what-are-NFT.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
