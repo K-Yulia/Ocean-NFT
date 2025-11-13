@@ -1,0 +1,218 @@
+.top-sellers {
+  margin-top: 160px;
+  // margin-bottom: 100px;
+}
+.top-sellers__container {
+  max-width: 1381px;
+}
+.top-sellers__title {
+  text-align: center;
+  // font-family: var(--font4);
+  // font-weight: 700;
+  // font-size: 26px;
+  // color: #fff;
+}
+.top-sellers__title-span {
+  color: #ff56f6;
+}
+.top-sellers__text {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 23px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  max-width: 506px;
+}
+.top-sellers__list {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // gap: 35px;
+  column-gap: 35px;
+  row-gap: 34px;
+}
+.top-sellers__item {
+  border-radius: 29px;
+  width: 430px;
+  height: 120px;
+  border: 3px solid rgba(255, 255, 255, 0.18);
+  //   border-image-source: linear-gradient(
+  //     90deg,
+  //     rgba(255, 255, 255, 0.18) 0%,
+  //     rgba(255, 255, 255, 0.1) 100%
+  //   );
+  //   border-image-slice: 3;
+  backdrop-filter: blur(75px);
+  -webkit-backdrop-filter: blur(75px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-sellers__item__order {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 44px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 29px;
+  margin-right: 15px;
+}
+.top-sellers__item__user {
+  width: 70px;
+  height: 70px;
+  margin-right: 13px;
+}
+.top-sellers__item__user-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+.top-sellers__item__user-name {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 19px;
+  // line-height: 44px;
+  margin-bottom: 16px;
+}
+.top-sellers__item__user-score-box {
+  position: relative;
+  display: flex;
+}
+.top-sellers__item__user-score-box-icon {
+  position: absolute;
+  width: 14px;
+  height: 18px;
+  fill: rgba(255, 255, 255, 0.8);
+  left: -5px;
+}
+.top-sellers__item__user-score {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  padding-left: 13px;
+}
+.top-sellers__item__user-increment-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  width: 95px;
+  height: 35px;
+  border: 2px solid;
+  margin-right: 18px;
+  margin-top: 17px;
+}
+.user-increment-box__green {
+  background: rgba(0, 178, 71, 0.15);
+  border-color: rgba(0, 178, 71, 0.72);
+  color: #0f6;
+}
+.user-increment-box__red {
+  background: linear-gradient(
+    180deg,
+    rgba(235, 20, 20, 0.15) 0%,
+    rgba(235, 20, 20, 0.15) 100%
+  );
+  border-color: rgba(178, 0, 0, 0.72);
+  color: #f00;
+}
+.top-sellers__item__user-increment {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 14px;
+}
+.top-sellers__link {
+  margin-top: 62px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 234px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 19px;
+}
+@media screen and (max-width: 1439px) {
+  .top-sellers__list {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 968px) {
+  .top-sellers {
+    margin-top: 110px;
+  }
+  .top-sellers__title {
+    font-size: 19px;
+  }
+  .top-sellers__text {
+    margin-top: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .top-sellers__item {
+    border-radius: 21px;
+    width: 316px;
+    height: 85px;
+  }
+  .top-sellers__item__order {
+    font-size: 13px;
+    line-height: 32px;
+    margin-left: 21px;
+    margin-right: 12px;
+  }
+  .top-sellers__item__user {
+    width: 51px;
+    height: 51px;
+    margin-right: 10px;
+  }
+  .top-sellers__item__user-name {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .top-sellers__item__user-score-box-icon {
+    width: 12px;
+    height: 14px;
+    left: -3px;
+  }
+  .top-sellers__item__user-score {
+    font-size: 9px;
+    padding-left: 10px;
+  }
+  .top-sellers__item__user-increment-box {
+    border-radius: 13px;
+    width: 72px;
+    height: 25px;
+    border: 2px solid;
+    margin-right: 14px;
+    margin-top: 12px;
+  }
+  .top-sellers__item__user-increment {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-sellers__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  .top-sellers__list > *:nth-child(n + 5) {
+    display: none;
+  }
+  .top-sellers__link {
+    display: none;
+  }
+  .top-sellers__btn-explore__mob {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+}

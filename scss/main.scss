@@ -2,8 +2,14 @@
 @use "./base/common";
 @use "./base/container";
 @use "./fonts/fonts";
+@use "./components/btn";
+@use "./components/title";
 @use "./layout/header";
 @use "./layout/hero";
 @use "./layout/top-now";
 @use "./layout/filter";
 @use "./layout/explore";
+@use "./layout/top-sellers";
+@use "./layout/what-are-NFT’s";
+@use "./layout/subscribe";
+@use "./layout/footer";

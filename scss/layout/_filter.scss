@@ -11,12 +11,9 @@
   flex-direction: column;
 }
 .filter__title {
-  font-family: var(--font4);
-  font-weight: 700;
-  font-size: 26px;
   margin-top: 50px;
   margin-bottom: 45px;
-  margin-left: 4px;
+  // margin-left: 4px;
 }
 .filter__list {
   display: grid;
@@ -24,12 +21,12 @@
   column-gap: 41px;
   row-gap: 40px;
 }
-.filter__btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
+// .filter__btn {
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+//   padding: 0;
+// }
 .filter__link {
   display: flex;
   align-items: center;

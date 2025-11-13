@@ -1,0 +1,118 @@
+.what-are-NFT {
+  margin-top: 160px;
+  position: relative;
+  background-image: url(/images/what-are-NFT.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 556px;
+}
+.what-are-NFT__wrapper {
+  position: absolute;
+  bottom: -134px;
+  right: 137px;
+  width: 574px;
+  height: 474px;
+  border: 3px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  border-image-slice: 3;
+  // background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.024) 100%
+  );
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  //   padding: 58px 48px 51px 71px;
+}
+.what-are-NFT__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 458px;
+  padding-left: 71px;
+  padding-top: 58px;
+}
+.what-are-NFT__title {
+  font-family: var(--third-family);
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 60px;
+  margin-bottom: 15px;
+}
+.what-are-NFT__text {
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 45px;
+}
+.what-are-NFT__list {
+  display: flex;
+  gap: 50px;
+}
+.what-are-NFT__link {
+  font-family: var(--third-family);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 27px;
+}
+.what-are-NFT__icon {
+  width: 13px;
+  height: 18px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 968px) {
+  .what-are-NFT__wrapper {
+    //   bottom: -134px;
+    left: 50%;
+    transform: translateX(-50%);
+    // width: 336px;
+    // height: 275px;
+  }
+}
+@media screen and (max-width: 678px) {
+  .what-are-NFT {
+    margin-top: 108px;
+    height: 378px;
+  }
+  .what-are-NFT__wrapper {
+    bottom: -18px;
+    width: 330px;
+    height: 270px;
+  }
+  .what-are-NFT__text-wrapper {
+    max-width: 276px;
+    padding-left: 41px;
+    padding-top: 34px;
+    margin-left: 10px;
+  }
+  .what-are-NFT__title {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+  .what-are-NFT__text {
+    font-size: 11px;
+    line-height: 21px;
+    margin-bottom: 45px;
+  }
+  .what-are-NFT__list {
+    display: flex;
+    gap: 50px;
+  }
+  .what-are-NFT__link {
+    font-size: 10px;
+    line-height: 27px;
+  }
+  .what-are-NFT__icon {
+    width: 8px;
+    height: 11px;
+    margin-right: 10px;
+  }
+}

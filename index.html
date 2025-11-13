@@ -15,10 +15,19 @@
     <header class="page-header">
       <div class="page-header__container container">
         <a href="#" class="logo link">
-          <picture>
+          <!-- <picture>
             <source srcset="./images/logo.webp" type="image/webp" />
             <img
               src="./images/logo.png"
+              alt="logo__icon"
+              class="logo__icon"
+              loading="lazy"
+            />
+          </picture> -->
+          <picture>
+            <!-- <source srcset="./images/logo.webp" type="image/webp" /> -->
+            <img
+              src="/images/icons/logo.svg"
               alt="logo__icon"
               class="logo__icon"
               loading="lazy"
@@ -112,19 +121,19 @@
               collectibles and non- fungible tokens (NFTs).
             </p>
             <div class="hero__btn-box">
-              <button type="button" class="hero__btn-explore">
+              <div class="hero__btn-explore">
                 <a href="#" class="hero__btn-explore__link link"
                   >Explore
                   <svg class="btn-explore__icon">
                     <use href="./images/sprite.svg#arrow"></use>
                   </svg>
                 </a>
-              </button>
-              <button type="button" class="hero__btn-create">
+              </div>
+              <div class="hero__btn-create">
                 <a href="#" class="hero__btn-create__link link"
                   >Create NFT’s
                 </a>
-              </button>
+              </div>
             </div>
             <ul class="hero__benefits list">
               <li class="hero__benefits__item">
@@ -214,14 +223,14 @@
                       <p class="auction-time__text-time">Secs</p>
                     </li>
                   </ul>
-                  <button type="button" class="auction-box__btn">
+                  <div class="auction-box__btn">
                     <a href="#" class="auction-box__btn__link link"
                       >Place Bid
                       <svg class="auction-box__btn__icon">
                         <use href="./images/sprite.svg#arrow"></use>
                       </svg>
                     </a>
-                  </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -256,9 +265,11 @@
         <div class="top-now__container container">
           <div class="swiper top-now__slider">
             <div class="top-now__slider-header">
-              <h2 class="top-now__slider-title">Top NFT’s now</h2>
-              <div class="swiper-button-next top-now__slider-btn-next">
-                <p class="top-now__slider-text">View all</p>
+              <h2 class="top-now__slider-title title">Top NFT’s now</h2>
+              <div
+                class="swiper-button-next top-now__slider-btn-next slider-btn-next"
+              >
+                <p class="top-now__slider-btn-text slider-btn-text">View all</p>
                 <svg class="top-now__slider__btn-icon">
                   <use href="./images/sprite.svg#arrow"></use>
                 </svg>
@@ -278,9 +289,9 @@
                   </picture>
                   <div class="top-now__slide__text-wrapper">
                     <div class="top-now__slide__text-box">
-                      <h2 class="top-now__slide__title">
+                      <h3 class="top-now__slide__title">
                         Apollo Eth #1289 NFT
-                      </h2>
+                      </h3>
                       <div class="top-now__slide__user-bloc">
                         <picture>
                           <source
@@ -335,14 +346,12 @@
                           <p class="top-now__slide__text-time">Secs</p>
                         </li>
                       </ul>
-                      <button type="button" class="top-now__slide__btn">
-                        <a href="#" class="top-now__slide__btn__link link"
-                          >Place Bid
-                          <svg class="top-now__slide__btn__icon">
-                            <use href="./images/sprite.svg#arrow"></use>
-                          </svg>
-                        </a>
-                      </button>
+                      <a href="#" class="top-now__slide__btn__link btn link"
+                        >Place Bid
+                        <svg class="top-now__slide__btn__icon btn__icon">
+                          <use href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -360,9 +369,9 @@
                   </picture>
                   <div class="top-now__slide__text-wrapper">
                     <div class="top-now__slide__text-box">
-                      <h2 class="top-now__slide__title">
+                      <h3 class="top-now__slide__title">
                         Sassy Bull #1169 Art
-                      </h2>
+                      </h3>
                       <div class="top-now__slide__user-bloc">
                         <picture>
                           <source
@@ -417,14 +426,12 @@
                           <p class="top-now__slide__text-time">Secs</p>
                         </li>
                       </ul>
-                      <button type="button" class="top-now__slide__btn">
-                        <a href="#" class="top-now__slide__btn__link link"
-                          >Place Bid
-                          <svg class="top-now__slide__btn__icon">
-                            <use href="./images/sprite.svg#arrow"></use>
-                          </svg>
-                        </a>
-                      </button>
+                      <a href="#" class="top-now__slide__btn__link btn link"
+                        >Place Bid
+                        <svg class="top-now__slide__btn__icon btn__icon">
+                          <use href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -442,7 +449,7 @@
                   </picture>
                   <div class="top-now__slide__text-wrapper">
                     <div class="top-now__slide__text-box">
-                      <h2 class="top-now__slide__title">Satisfying 3D Art</h2>
+                      <h3 class="top-now__slide__title">Satisfying 3D Art</h3>
                       <div class="top-now__slide__user-bloc">
                         <picture>
                           <source
@@ -497,14 +504,12 @@
                           <p class="top-now__slide__text-time">Secs</p>
                         </li>
                       </ul>
-                      <button type="button" class="top-now__slide__btn">
-                        <a href="#" class="top-now__slide__btn__link link"
-                          >Place Bid
-                          <svg class="top-now__slide__btn__icon">
-                            <use href="./images/sprite.svg#arrow"></use>
-                          </svg>
-                        </a>
-                      </button>
+                      <a href="#" class="top-now__slide__btn__link btn link"
+                        >Place Bid
+                        <svg class="top-now__slide__btn__icon btn__icon">
+                          <use href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -522,9 +527,9 @@
                   </picture>
                   <div class="top-now__slide__text-wrapper">
                     <div class="top-now__slide__text-box">
-                      <h2 class="top-now__slide__title">
+                      <h3 class="top-now__slide__title">
                         Apollo Eth #1289 NFT
-                      </h2>
+                      </h3>
                       <div class="top-now__slide__user-bloc">
                         <picture>
                           <source
@@ -579,14 +584,12 @@
                           <p class="top-now__slide__text-time">Secs</p>
                         </li>
                       </ul>
-                      <button type="button" class="top-now__slide__btn">
-                        <a href="#" class="top-now__slide__btn__link link"
-                          >Place Bid
-                          <svg class="top-now__slide__btn__icon">
-                            <use href="./images/sprite.svg#arrow"></use>
-                          </svg>
-                        </a>
-                      </button>
+                      <a href="#" class="top-now__slide__btn__link btn link"
+                        >Place Bid
+                        <svg class="top-now__slide__btn__icon btn__icon">
+                          <use href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -605,9 +608,9 @@
 
                   <div class="top-now__slide__text-wrapper">
                     <div class="top-now__slide__text-box">
-                      <h2 class="top-now__slide__title">
+                      <h3 class="top-now__slide__title">
                         Sassy Bull #1169 Art
-                      </h2>
+                      </h3>
                       <div class="top-now__slide__user-bloc">
                         <picture>
                           <source
@@ -662,14 +665,12 @@
                           <p class="top-now__slide__text-time">Secs</p>
                         </li>
                       </ul>
-                      <button type="button" class="top-now__slide__btn">
-                        <a href="#" class="top-now__slide__btn__link link"
-                          >Place Bid
-                          <svg class="top-now__slide__btn__icon">
-                            <use href="./images/sprite.svg#arrow"></use>
-                          </svg>
-                        </a>
-                      </button>
+                      <a href="#" class="top-now__slide__btn__link btn link"
+                        >Place Bid
+                        <svg class="top-now__slide__btn__icon btn__icon">
+                          <use href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -687,7 +688,7 @@
                   </picture>
                   <div class="top-now__slide__text-wrapper">
                     <div class="top-now__slide__text-box">
-                      <h2 class="top-now__slide__title">Satisfying 3D Art</h2>
+                      <h3 class="top-now__slide__title">Satisfying 3D Art</h3>
                       <div class="top-now__slide__user-bloc">
                         <picture>
                           <source
@@ -742,24 +743,26 @@
                           <p class="top-now__slide__text-time">Secs</p>
                         </li>
                       </ul>
-                      <button type="button" class="top-now__slide__btn">
-                        <a href="#" class="top-now__slide__btn__link link"
-                          >Place Bid
-                          <svg class="top-now__slide__btn__icon">
-                            <use href="./images/sprite.svg#arrow"></use>
-                          </svg>
-                        </a>
-                      </button>
+                      <a href="#" class="top-now__slide__btn__link btn link"
+                        >Place Bid
+                        <svg class="top-now__slide__btn__icon btn__icon">
+                          <use href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="top-now__parent-block">
-              <div class="swiper-button-next top-now__slider-btn-next__mob">
-                <a class="top-now__slider-text__mob"
+              <div
+                class="swiper-button-next top-now__slider-btn-next__mob btn-explore__mob"
+              >
+                <a class="top-now__slider-btn-link link btn-explore__mob-link"
                   >Explore
-                  <svg class="top-now__slider__btn-icon__mob">
+                  <svg
+                    class="top-now__slider__btn-icon__mob btn-explore__mob-icon"
+                  >
                     <use href="./images/sprite.svg#arrow"></use></svg
                 ></a>
               </div>
@@ -770,55 +773,55 @@
       <section class="filter">
         <div class="filter__container container">
           <div class="filter__text-wrapper">
-            <h2 class="filter__title">Explore Collections</h2>
+            <h2 class="filter__title title">Explore Collections</h2>
             <ul class="filter__list list">
               <li class="filter__item">
-                <button class="filter__btn">
+                <div class="filter__btn">
                   <a href="#" class="filter__link link">Photography</a>
-                </button>
+                </div>
               </li>
               <li class="filter__item">
-                <button class="filter__btn">
+                <div class="filter__btn">
                   <a href="#" class="filter__link link">Sports</a>
-                </button>
+                </div>
               </li>
               <li class="filter__item">
-                <button class="filter__btn">
+                <div class="filter__btn">
                   <a href="#" class="filter__link link">Brands</a>
-                </button>
+                </div>
               </li>
               <li class="filter__item">
-                <button class="filter__btn">
+                <div class="filter__btn">
                   <a href="#" class="filter__link link">Collectibles</a>
-                </button>
+                </div>
               </li>
               <li class="filter__item">
-                <button class="filter__btn">
+                <div class="filter__btn">
                   <a href="#" class="filter__link link">Art</a>
-                </button>
+                </div>
               </li>
               <li class="filter__item">
-                <button class="filter__btn">
+                <div class="filter__btn">
                   <a href="#" class="filter__link link">Utility</a>
-                </button>
+                </div>
               </li>
               <li class="filter__item">
-                <button class="filter__btn">
+                <div class="filter__btn">
                   <a href="#" class="filter__link link">Brands</a>
-                </button>
+                </div>
               </li>
               <li class="filter__item">
-                <button class="filter__btn">
+                <div class="filter__btn">
                   <a href="#" class="filter__link link">Collectibles</a>
-                </button>
+                </div>
               </li>
             </ul>
-            <button class="filter__btn-view">
+            <div class="filter__btn-view">
               <a href="#" class="filter__btn-view__link link"
                 >View all<svg class="filter__btn-view__icon">
                   <use href="./images/sprite.svg#arrow"></use></svg
               ></a>
-            </button>
+            </div>
           </div>
           <div class="filter__img-wrapper">
             <picture>
@@ -837,9 +840,11 @@
         <div class="explore__container container">
           <div class="swiper explore__slider">
             <div class="explore__slider-header">
-              <h2 class="explore__slider-title">Explore Collections</h2>
-              <div class="swiper-button-next explore__slider-btn-next">
-                <p class="explore__slider-text">View all</p>
+              <h2 class="explore__slider-title title">Explore Collections</h2>
+              <div
+                class="swiper-button-next explore__slider-btn-next slider-btn-next"
+              >
+                <p class="explore__slider-btn-text slider-btn-text">View all</p>
                 <svg class="explore__slider__btn-icon">
                   <use href="./images/sprite.svg#arrow"></use>
                 </svg>
@@ -891,9 +896,9 @@
                       <p class="explore__slide__user-info__text">Artworks</p>
                     </li>
                   </ul>
-                  <button class="explore__slide__btn">
-                    <a href="#" class="explore__slide__btn-link link">Follow</a>
-                  </button>
+                  <a href="#" class="explore__slide__btn-link btn link"
+                    >Follow</a
+                  >
                 </div>
               </div>
               <div class="swiper-slide explore__slide">
@@ -941,9 +946,9 @@
                       <p class="explore__slide__user-info__text">Artworks</p>
                     </li>
                   </ul>
-                  <button class="explore__slide__btn">
-                    <a href="#" class="explore__slide__btn-link link">Follow</a>
-                  </button>
+                  <a href="#" class="explore__slide__btn-link btn link"
+                    >Follow</a
+                  >
                 </div>
               </div>
               <div class="swiper-slide explore__slide">
@@ -991,9 +996,9 @@
                       <p class="explore__slide__user-info__text">Artworks</p>
                     </li>
                   </ul>
-                  <button class="explore__slide__btn">
-                    <a href="#" class="explore__slide__btn-link link">Follow</a>
-                  </button>
+                  <a href="#" class="explore__slide__btn-link btn link"
+                    >Follow</a
+                  >
                 </div>
               </div>
               <div class="swiper-slide explore__slide">
@@ -1041,9 +1046,9 @@
                       <p class="explore__slide__user-info__text">Artworks</p>
                     </li>
                   </ul>
-                  <button class="explore__slide__btn">
-                    <a href="#" class="explore__slide__btn-link link">Follow</a>
-                  </button>
+                  <a href="#" class="explore__slide__btn-link btn link"
+                    >Follow</a
+                  >
                 </div>
               </div>
               <div class="swiper-slide explore__slide">
@@ -1091,9 +1096,9 @@
                       <p class="explore__slide__user-info__text">Artworks</p>
                     </li>
                   </ul>
-                  <button class="explore__slide__btn">
-                    <a href="#" class="explore__slide__btn-link link">Follow</a>
-                  </button>
+                  <a href="#" class="explore__slide__btn-link btn link"
+                    >Follow</a
+                  >
                 </div>
               </div>
               <div class="swiper-slide explore__slide">
@@ -1141,17 +1146,21 @@
                       <p class="explore__slide__user-info__text">Artworks</p>
                     </li>
                   </ul>
-                  <button class="explore__slide__btn">
-                    <a href="#" class="explore__slide__btn-link link">Follow</a>
-                  </button>
+                  <a href="#" class="explore__slide__btn-link btn link"
+                    >Follow</a
+                  >
                 </div>
               </div>
             </div>
             <div class="explore__parent-block">
-              <div class="swiper-button-next explore__slider-btn-next__mob">
-                <a class="explore__slider-text__mob"
+              <div
+                class="swiper-button-next explore__slider-btn-next__mob btn-explore__mob"
+              >
+                <a class="explore__slider-btn-link link btn-explore__mob-link"
                   >Explore
-                  <svg class="explore__slider__btn-icon__mob">
+                  <svg
+                    class="explore__slider__btn-icon__mob btn-explore__mob-icon"
+                  >
                     <use href="./images/sprite.svg#arrow"></use></svg
                 ></a>
               </div>
@@ -1159,11 +1168,682 @@
           </div>
         </div>
       </section>
-      <!-- <section class="top-sellers"></section> -->
-      <!-- <section class="what-are-NFT’s"></section> -->
-      <!-- <section class="subscribe-to-us"></section> -->
+      <section class="top-sellers">
+        <div class="top-sellers__container container">
+          <h2 class="top-sellers__title title">
+            Top Sellers this
+            <span class="top-sellers__title-span">
+              Month<svg
+                width="13"
+                height="8"
+                viewBox="0 0 13 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.16 1.20007C12.1604 1.35445 12.1318 1.507 12.0762 1.64649C12.0206 1.78598 11.9394 1.90887 11.8386 2.00614L6.62768 6.99757C6.47228 7.14957 6.27735 7.23267 6.07619 7.23267C5.87502 7.23267 5.6801 7.14957 5.5247 6.99757L0.313745 1.83045C0.136384 1.65504 0.0248484 1.40298 0.00367478 1.12971C-0.0174988 0.85645 0.0534239 0.584369 0.20084 0.373327C0.348257 0.162284 0.560092 0.0295677 0.789744 0.00437304C1.0194 -0.0208216 1.24805 0.0635695 1.42541 0.238981L6.08053 4.85839L10.7356 0.393995C10.8631 0.267625 11.0184 0.187351 11.183 0.162673C11.3476 0.137996 11.5147 0.169946 11.6646 0.254744C11.8144 0.339543 11.9407 0.47364 12.0285 0.641169C12.1163 0.808698 12.1619 1.00265 12.16 1.20007Z"
+                  fill="#FF56F6"
+                /></svg
+            ></span>
+          </h2>
+          <p class="top-sellers__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim minim mollit.
+          </p>
+          <ul class="top-sellers__list list">
+            <li class="top-sellers__item">
+              <p class="top-sellers__item__order">1</p>
+              <picture>
+                <source
+                  srcset="./images/top-sellers_1.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/top-sellers_1.png"
+                  alt="top-sellers__user-1"
+                  class="top-sellers__item__user"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="top-sellers__item__user-info">
+                <p class="top-sellers__item__user-name">Eleanor Pena</p>
+                <div class="top-sellers__item__user-score-box">
+                  <svg class="top-sellers__item__user-score-box-icon">
+                    <use href="./images/sprite.svg#ethereum-icon"></use>
+                  </svg>
+                  <p class="top-sellers__item__user-score">74875</p>
+                </div>
+              </div>
+              <div
+                class="top-sellers__item__user-increment-box user-increment-box__green"
+              >
+                <p class="top-sellers__item__user-increment">+468.48%</p>
+              </div>
+            </li>
+            <li class="top-sellers__item">
+              <p class="top-sellers__item__order">2</p>
+              <picture>
+                <source
+                  srcset="./images/top-sellers_2.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/top-sellers_2.png"
+                  alt="top-sellers__user-2"
+                  class="top-sellers__item__user"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="top-sellers__item__user-info">
+                <p class="top-sellers__item__user-name">Savannah Nguyen</p>
+                <div class="top-sellers__item__user-score-box">
+                  <svg class="top-sellers__item__user-score-box-icon">
+                    <use href="./images/sprite.svg#ethereum-icon"></use>
+                  </svg>
+                  <p class="top-sellers__item__user-score">18599</p>
+                </div>
+              </div>
+              <div
+                class="top-sellers__item__user-increment-box user-increment-box__red"
+              >
+                <p class="top-sellers__item__user-increment">+468.48%</p>
+              </div>
+            </li>
+            <li class="top-sellers__item">
+              <p class="top-sellers__item__order">3</p>
+              <picture>
+                <source
+                  srcset="./images/top-sellers_3.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/top-sellers_3.png"
+                  alt="top-sellers__user-3"
+                  class="top-sellers__item__user"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="top-sellers__item__user-info">
+                <p class="top-sellers__item__user-name">Arlene McCoy</p>
+                <div class="top-sellers__item__user-score-box">
+                  <svg class="top-sellers__item__user-score-box-icon">
+                    <use href="./images/sprite.svg#ethereum-icon"></use>
+                  </svg>
+                  <p class="top-sellers__item__user-score">45904</p>
+                </div>
+              </div>
+              <div
+                class="top-sellers__item__user-increment-box user-increment-box__green"
+              >
+                <p class="top-sellers__item__user-increment">+468.48%</p>
+              </div>
+            </li>
+            <li class="top-sellers__item">
+              <p class="top-sellers__item__order">4</p>
+              <picture>
+                <source
+                  srcset="./images/top-sellers_4.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/top-sellers_4.png"
+                  alt="top-sellers__user-4"
+                  class="top-sellers__item__user"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="top-sellers__item__user-info">
+                <p class="top-sellers__item__user-name">Esther Howard</p>
+                <div class="top-sellers__item__user-score-box">
+                  <svg class="top-sellers__item__user-score-box-icon">
+                    <use href="./images/sprite.svg#ethereum-icon"></use>
+                  </svg>
+                  <p class="top-sellers__item__user-score">16627</p>
+                </div>
+              </div>
+              <div
+                class="top-sellers__item__user-increment-box user-increment-box__red"
+              >
+                <p class="top-sellers__item__user-increment">+468.48%</p>
+              </div>
+            </li>
+            <li class="top-sellers__item">
+              <p class="top-sellers__item__order">5</p>
+              <picture>
+                <source
+                  srcset="./images/top-sellers_5.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/top-sellers_5.png"
+                  alt="top-sellers__user-5"
+                  class="top-sellers__item__user"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="top-sellers__item__user-info">
+                <p class="top-sellers__item__user-name">Robert Fox</p>
+                <div class="top-sellers__item__user-score-box">
+                  <svg class="top-sellers__item__user-score-box-icon">
+                    <use href="./images/sprite.svg#ethereum-icon"></use>
+                  </svg>
+                  <p class="top-sellers__item__user-score">9631</p>
+                </div>
+              </div>
+              <div
+                class="top-sellers__item__user-increment-box user-increment-box__green"
+              >
+                <p class="top-sellers__item__user-increment">+468.48%</p>
+              </div>
+            </li>
+            <li class="top-sellers__item">
+              <p class="top-sellers__item__order">6</p>
+              <picture>
+                <source
+                  srcset="./images/top-sellers_6.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/top-sellers_6.png"
+                  alt="top-sellers__user-6"
+                  class="top-sellers__item__user"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="top-sellers__item__user-info">
+                <p class="top-sellers__item__user-name">Darlene Robertson</p>
+                <div class="top-sellers__item__user-score-box">
+                  <svg class="top-sellers__item__user-score-box-icon">
+                    <use href="./images/sprite.svg#ethereum-icon"></use>
+                  </svg>
+                  <p class="top-sellers__item__user-score">70443</p>
+                </div>
+              </div>
+              <div
+                class="top-sellers__item__user-increment-box user-increment-box__green"
+              >
+                <p class="top-sellers__item__user-increment">+468.48%</p>
+              </div>
+            </li>
+            <li class="top-sellers__item">
+              <p class="top-sellers__item__order">7</p>
+              <picture>
+                <source
+                  srcset="./images/top-sellers_7.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/top-sellers_7.png"
+                  alt="top-sellers__user-7"
+                  class="top-sellers__item__user"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="top-sellers__item__user-info">
+                <p class="top-sellers__item__user-name">Jacob Jones</p>
+                <div class="top-sellers__item__user-score-box">
+                  <svg class="top-sellers__item__user-score-box-icon">
+                    <use href="./images/sprite.svg#ethereum-icon"></use>
+                  </svg>
+                  <p class="top-sellers__item__user-score">13671</p>
+                </div>
+              </div>
+              <div
+                class="top-sellers__item__user-increment-box user-increment-box__green"
+              >
+                <p class="top-sellers__item__user-increment">+468.48%</p>
+              </div>
+            </li>
+            <li class="top-sellers__item">
+              <p class="top-sellers__item__order">8</p>
+              <picture>
+                <source
+                  srcset="./images/top-sellers_8.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/top-sellers_8.png"
+                  alt="top-sellers__user-8"
+                  class="top-sellers__item__user"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="top-sellers__item__user-info">
+                <p class="top-sellers__item__user-name">Jerome Bell</p>
+                <div class="top-sellers__item__user-score-box">
+                  <svg class="top-sellers__item__user-score-box-icon">
+                    <use href="./images/sprite.svg#ethereum-icon"></use>
+                  </svg>
+                  <p class="top-sellers__item__user-score">39235</p>
+                </div>
+              </div>
+              <div
+                class="top-sellers__item__user-increment-box user-increment-box__red"
+              >
+                <p class="top-sellers__item__user-increment">+468.48%</p>
+              </div>
+            </li>
+            <li class="top-sellers__item">
+              <p class="top-sellers__item__order">9</p>
+              <picture>
+                <source
+                  srcset="./images/top-sellers_9.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/top-sellers_9.png"
+                  alt="top-sellers__user-9"
+                  class="top-sellers__item__user"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="top-sellers__item__user-info">
+                <p class="top-sellers__item__user-name">Wade Warren</p>
+                <div class="top-sellers__item__user-score-box">
+                  <svg class="top-sellers__item__user-score-box-icon">
+                    <use href="./images/sprite.svg#ethereum-icon"></use>
+                  </svg>
+                  <p class="top-sellers__item__user-score">43359</p>
+                </div>
+              </div>
+              <div
+                class="top-sellers__item__user-increment-box user-increment-box__red"
+              >
+                <p class="top-sellers__item__user-increment">+468.48%</p>
+              </div>
+            </li>
+            <li class="top-sellers__item">
+              <p class="top-sellers__item__order">10</p>
+              <picture>
+                <source
+                  srcset="./images/top-sellers_10.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/top-sellers_10.png"
+                  alt="top-sellers__user-10"
+                  class="top-sellers__item__user"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="top-sellers__item__user-info">
+                <p class="top-sellers__item__user-name">Jane Cooper</p>
+                <div class="top-sellers__item__user-score-box">
+                  <svg class="top-sellers__item__user-score-box-icon">
+                    <use href="./images/sprite.svg#ethereum-icon"></use>
+                  </svg>
+                  <p class="top-sellers__item__user-score">95554</p>
+                </div>
+              </div>
+              <div
+                class="top-sellers__item__user-increment-box user-increment-box__red"
+              >
+                <p class="top-sellers__item__user-increment">+468.48%</p>
+              </div>
+            </li>
+            <li class="top-sellers__item">
+              <p class="top-sellers__item__order">11</p>
+              <picture>
+                <source
+                  srcset="./images/top-sellers_11.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/top-sellers_11.png"
+                  alt="top-sellers__user-11"
+                  class="top-sellers__item__user"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="top-sellers__item__user-info">
+                <p class="top-sellers__item__user-name">Kristin Watson</p>
+                <div class="top-sellers__item__user-score-box">
+                  <svg class="top-sellers__item__user-score-box-icon">
+                    <use href="./images/sprite.svg#ethereum-icon"></use>
+                  </svg>
+                  <p class="top-sellers__item__user-score">20796</p>
+                </div>
+              </div>
+              <div
+                class="top-sellers__item__user-increment-box user-increment-box__green"
+              >
+                <p class="top-sellers__item__user-increment">+468.48%</p>
+              </div>
+            </li>
+            <li class="top-sellers__item">
+              <p class="top-sellers__item__order">12</p>
+              <picture>
+                <source
+                  srcset="./images/top-sellers_12.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/top-sellers_12.png"
+                  alt="top-sellers__user-12"
+                  class="top-sellers__item__user"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="top-sellers__item__user-info">
+                <p class="top-sellers__item__user-name">Kathryn Murphy</p>
+                <div class="top-sellers__item__user-score-box">
+                  <svg class="top-sellers__item__user-score-box-icon">
+                    <use href="./images/sprite.svg#ethereum-icon"></use>
+                  </svg>
+                  <p class="top-sellers__item__user-score">4339</p>
+                </div>
+              </div>
+              <div
+                class="top-sellers__item__user-increment-box user-increment-box__red"
+              >
+                <p class="top-sellers__item__user-increment">+468.48%</p>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="top-sellers__link link btn">Explore all</a>
+          <div class="top-sellers__btn-explore__mob btn-explore__mob">
+            <a
+              class="top-sellers__btn-explore__mob-link link btn-explore__mob-link"
+              >Explore
+              <svg
+                class="top-sellers__btn-explore__mob-icon btn-explore__mob-icon"
+              >
+                <use href="./images/sprite.svg#arrow"></use></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="what-are-NFT">
+        <div class="what-are-NFT__wrapper">
+          <div class="what-are-NFT__text-wrapper">
+            <h4 class="what-are-NFT__title">What are NFT’s ?</h4>
+            <p class="what-are-NFT__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum
+              quis amet, faucibus lorem. Lectus amet odio quis sed adipiscing
+              adipiscing magna non. Nullam turpis faucibus ridiculus suscipit.
+              Et blandit suspendisse curabitur eu congue dui ut.
+            </p>
+            <ul class="what-are-NFT__list list">
+              <li class="what-are-NFT__item">
+                <a href="#" class="what-are-NFT__link link">Learn more</a>
+              </li>
+              <li class="what-are-NFT__item">
+                <a href="#" class="what-are-NFT__link link"
+                  ><svg
+                    viewBox="0 0 13 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="what-are-NFT__icon"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.608943 0.0745105C0.492662 -0.0110257 0.338514 -0.0241851 0.209611 0.0416119C0.0810903 0.107409 0 0.240938 0 0.386853V17.4167C0 17.5626 0.0810903 17.6961 0.209611 17.7619C0.263926 17.7898 0.323596 17.8037 0.382502 17.8037C0.462444 17.8037 0.542005 17.7786 0.608943 17.729L12.084 9.2141C12.1823 9.14095 12.2401 9.02484 12.2401 8.90176C12.2401 8.77868 12.1823 8.66257 12.084 8.58942L0.608943 0.0745105Z"
+                      fill="white"
+                    /></svg
+                  >Watch video</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="subscribe__container container">
+          <picture>
+            <source srcset="./images/subscribe.webp" type="image/webp" />
+            <img
+              src="./images/subscribe.png"
+              alt="subscribe__img"
+              class="subscribe__img"
+              loading="lazy"
+            />
+          </picture>
+          <picture>
+            <source srcset="./images/subscribe-mob.webp" type="image/webp" />
+            <img
+              src="./images/subscribe-mob.png"
+              alt="subscribe__img"
+              class="subscribe__img-mob"
+              loading="lazy"
+            />
+          </picture>
+          <div class="subscribe__text-wrapper">
+            <h3 class="subscribe__title">Subscribe to us</h3>
+            <p class="subscribe__text">
+              Specially developed to help restore a more youthful appearance
+              with improved radiance and bounce.
+            </p>
+            <form action="#" class="subscribe__form">
+              <input
+                type="email"
+                placeholder="Your work email address"
+                name="subscription-user-email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                class="subscribe__input"
+              />
+              <div class="subscribe__btn-border">
+                <button type="submit" class="subscribe__btn">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__main">
+          <div class="footer__info">
+            <a href="#" class="footer__logo link">
+              <picture>
+                <img
+                  src="/images/icons/logo.svg"
+                  alt="logo__icon"
+                  class="footer__logo-icon"
+                  loading="lazy"
+                />
+              </picture>
+              OceanNFT</a
+            >
+            <p class="footer__text">
+              Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl
+              nunc quam ac sed turpis volutpat. Cursus sed massa non nisi,
+              placerat.
+            </p>
+            <ul class="footer__social-list list">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social__link link">
+                  <svg class="footer__social__icon">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social__link link">
+                  <svg class="footer__social__icon">
+                    <use href="./images/sprite.svg#globe"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social__link link">
+                  <svg class="footer__social__icon">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social__link link">
+                  <svg class="footer__social__icon">
+                    <use href="./images/sprite.svg#youTube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__menu__column">
+              <input
+                type="checkbox"
+                id="footer-1"
+                class="footer__menu__toggle"
+              />
+              <label for="footer-1" class="footer__menu__title">
+                Market place
+                <svg class="footer__menu__icon">
+                  <use href="./images/sprite.svg#arrow-down"></use>
+                </svg>
+              </label>
+              <ul class="footer__menu__list">
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Overview</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link"
+                    >Features
+                    <span class="footer__menu__link-span">new</span></a
+                  >
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Tutorials</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Pricing</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Releases</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu__column">
+              <input
+                type="checkbox"
+                id="footer-2"
+                class="footer__menu__toggle"
+              />
+              <label for="footer-2" class="footer__menu__title">
+                Collectibles
+                <svg class="footer__menu__icon">
+                  <use href="./images/sprite.svg#arrow-down"></use>
+                </svg>
+              </label>
+              <ul class="footer__menu__list">
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">About</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Press</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Careers</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Contact</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Partners</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu__column">
+              <input
+                type="checkbox"
+                id="footer-3"
+                class="footer__menu__toggle"
+              />
+              <label for="footer-3" class="footer__menu__title">
+                Support
+                <svg class="footer__menu__icon">
+                  <use href="./images/sprite.svg#arrow-down"></use>
+                </svg>
+              </label>
+              <ul class="footer__menu__list">
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Help Center</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Safety Center</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Legal</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Privacy policy</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Status</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu__column">
+              <input
+                type="checkbox"
+                id="footer-4"
+                class="footer__menu__toggle"
+              />
+              <label for="footer-4" class="footer__menu__title">
+                Legal
+                <svg class="footer__menu__icon">
+                  <use href="./images/sprite.svg#arrow-down"></use>
+                </svg>
+              </label>
+              <ul class="footer__menu__list">
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Cookies Policy</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Privacy Policy</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link"
+                    >Terms of Service</a
+                  >
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link"
+                    >Law Enforcement</a
+                  >
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Status</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu__column">
+              <input
+                type="checkbox"
+                id="footer-5"
+                class="footer__menu__toggle"
+              />
+              <label for="footer-5" class="footer__menu__title">
+                Follow us
+                <svg class="footer__menu__icon">
+                  <use href="./images/sprite.svg#arrow-down"></use>
+                </svg>
+              </label>
+              <ul class="footer__menu__list">
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Facebook</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Twitter</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Dribbble</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">Instagram</a>
+                </li>
+                <li class="footer__menu__item">
+                  <a href="#" class="footer__menu__link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom"></div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/swiper.js"></script>

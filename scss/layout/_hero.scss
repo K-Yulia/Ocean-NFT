@@ -41,13 +41,13 @@
 }
 .hero__btn-box {
   display: flex;
-  gap: 38px;
-  margin-bottom: 60px;
+  align-items: center;
+  gap: 34px;
+  margin-bottom: 64px;
 }
 
 .hero__btn-explore {
   width: 253px;
-  cursor: pointer;
   padding: 2px;
   clip-path: polygon(
     17.634% 1.639%,
@@ -139,7 +139,6 @@
   font-size: 19px;
   color: #ffffff;
   padding: 20px 32px 21px 67px;
-
   background: linear-gradient(
     310deg,
     #ff56f6 18.31%,
@@ -229,12 +228,7 @@
   fill: #fff;
   stroke: #fff;
 }
-.hero__btn-create {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
+
 .hero__btn-create__link {
   font-family: var(--font4);
   font-weight: 700;
@@ -620,22 +614,23 @@
 }
 .auction-box__btn {
   border-radius: 5px;
-  width: 125px;
-  height: 45px;
   padding: 2px;
-  cursor: pointer;
   background: linear-gradient(270deg, #ffa6fa 0%, #3c79d4 100%);
 }
 
 .auction-box__btn__link {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 17px;
   color: #fff;
-  padding: 9px 0px 6px 9px;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  // padding: 9px 0px 6px 9px;
   background: linear-gradient(
     90deg,
     #ff56f6 18.31%,
@@ -995,12 +990,14 @@
   .auction-time__number {
     padding-top: 3px;
   }
-  .auction-box__btn {
-    width: 120px;
-  }
+  // .auction-box__btn {
+  //   width: 120px;
+  // }
   .auction-box__btn__link {
+    width: 115px;
+    height: 36px;
     gap: 10px;
-    padding: 8px 0px 6px 9px;
+    // padding: 8px 0px 6px 9px;
   }
 }
 @media screen and (max-width: 630px) {

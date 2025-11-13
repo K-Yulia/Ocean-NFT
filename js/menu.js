@@ -1,3 +1,12 @@
+document.querySelectorAll('a[href="#"]').forEach((a) => {
+  a.addEventListener("click", (e) => e.preventDefault());
+});
+
+const form = document.querySelector(".subscribe__form");
+
+// form.addEventListener("submit", function (event) {
+//   event.preventDefault();
+// });
 (() => {
   const refs = {
     openMenuBtn: document.querySelector("[data-menu-open]"),
